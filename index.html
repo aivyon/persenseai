@@ -1,1 +1,199 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PersenseAI | AI Agent for CV Debugging</title>
+  <meta name="description" content="PersenseAI is an AI agent concept for debugging Computer Vision, tracking, ReID, detection, occlusion, and video pipeline failures." />
+  <meta name="theme-color" content="#050914" />
+  <meta property="og:title" content="PersenseAI | AI Agent for CV Debugging" />
+  <meta property="og:description" content="Visual agents that diagnose tracking, ReID, and perception failures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://persenseai.com/" />
+  <link rel="canonical" href="https://persenseai.com/" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="scan-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PersenseAI home">
+      <span class="brand-mark">P</span>
+      <span>PersenseAI</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#diagram">Product</a>
+      <a href="#failures">Failures</a>
+      <a href="#features">Signals</a>
+      <a href="#report">Report</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Visual Debug Agent</p>
+        <h1>PersenseAI</h1>
+        <h2>AI that debugs CV failures.</h2>
+        <p class="hero-text">Tracking breaks. IDs switch. ReID drifts. PersenseAI turns video evidence into diagnosis.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#diagram">Explore the concept</a>
+          <a class="button secondary" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-console" aria-label="Perception diagnostics preview">
+        <div class="console-header"><span></span> track_017 incident</div>
+        <div class="video-stage">
+          <div class="frame-tag">frame 1284</div>
+          <div class="track-box box-a"><span>ID 17</span></div>
+          <div class="track-box box-b"><span>ID ?</span></div>
+          <div class="track-box box-c"><span>ID 42</span></div>
+          <div class="trajectory trajectory-one"></div>
+          <div class="trajectory trajectory-two"></div>
+          <div class="occlusion-band">occlusion</div>
+        </div>
+        <div class="mini-report">
+          <b>Likely failure</b>
+          <strong>ID switch after occlusion</strong>
+          <span>embedding spike + bbox jump + frame gap</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="diagram" class="section-shell product-diagram-section">
+      <div class="section-heading compact">
+        <p class="section-kicker">Product map</p>
+        <h2>From messy pipeline data to a clear diagnosis.</h2>
+      </div>
+      <div class="pipeline" aria-label="Visual Debug Agent pipeline">
+        <div class="pipe-card input-card">
+          <span class="pipe-label">Input</span>
+          <h3>Video + Logs + Tracks</h3>
+          <div class="stacked-inputs">
+            <i>video.mp4</i><i>detections.json</i><i>tracks.csv</i>
+          </div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-card table-card">
+          <span class="pipe-label">Signals</span>
+          <h3>Feature Table</h3>
+          <div class="micro-table"><span>frame_gap</span><b>6</b><span>bbox_jump</span><b>0.82</b><span>embed_dist</span><b>0.91</b></div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-card anomaly-card">
+          <span class="pipe-label">Detect</span>
+          <h3>Anomaly Detection</h3>
+          <div class="radar"><span></span></div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-card agent-card">
+          <span class="pipe-label">Reason</span>
+          <h3>Agent Diagnosis</h3>
+          <p>ID switch likely</p>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-card report-card-small">
+          <span class="pipe-label">Output</span>
+          <h3>Report</h3>
+          <p>Evidence + next check</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="failures" class="section-shell failures-section">
+      <div class="section-heading compact">
+        <p class="section-kicker">Failure modes</p>
+        <h2>Debug the errors hidden between frames.</h2>
+      </div>
+      <div class="failure-grid">
+        <article><span class="failure-icon switch"></span><h3>ID Switch</h3><p>identity flips</p></article>
+        <article><span class="failure-icon reid"></span><h3>ReID Mismatch</h3><p>embedding conflict</p></article>
+        <article><span class="failure-icon occlusion"></span><h3>Occlusion</h3><p>lost visibility</p></article>
+        <article><span class="failure-icon drift"></span><h3>Detection Drift</h3><p>box/confidence decay</p></article>
+        <article><span class="failure-icon handoff"></span><h3>Camera Handoff</h3><p>handover gap</p></article>
+        <article><span class="failure-icon domain"></span><h3>Domain Shift</h3><p>lighting or scene change</p></article>
+      </div>
+    </section>
+
+    <section id="features" class="section-shell visual-lab-section">
+      <div class="section-heading compact">
+        <p class="section-kicker">Diagnostic signals</p>
+        <h2>Track features become explainable evidence.</h2>
+      </div>
+      <div class="lab-grid">
+        <div class="feature-mockup mock-panel">
+          <div class="mock-title"><span></span> feature_table.track_017</div>
+          <div class="feature-table" role="table" aria-label="Feature table mockup">
+            <div class="row head"><span>feature</span><span>value</span><span>risk</span></div>
+            <div class="row"><span>frame_gap</span><span>6</span><meter min="0" max="100" value="76"></meter></div>
+            <div class="row"><span>bbox_jump</span><span>0.82</span><meter min="0" max="100" value="88"></meter></div>
+            <div class="row"><span>confidence_drop</span><span>-0.41</span><meter min="0" max="100" value="69"></meter></div>
+            <div class="row"><span>embedding_distance</span><span>0.91</span><meter min="0" max="100" value="94"></meter></div>
+            <div class="row"><span>motion_consistency</span><span>0.28</span><meter min="0" max="100" value="62"></meter></div>
+            <div class="row"><span>occlusion_score</span><span>0.77</span><meter min="0" max="100" value="81"></meter></div>
+            <div class="row alert"><span>anomaly_score</span><span>0.93</span><meter min="0" max="100" value="93"></meter></div>
+          </div>
+        </div>
+
+        <div class="explain-mockup mock-panel" aria-label="SHAP-style explanation mockup">
+          <div class="mock-title"><span></span> why suspicious?</div>
+          <h3>Suspicious track</h3>
+          <div class="shap-list">
+            <div><span>embedding_distance</span><b style="--w: 92%">+0.34</b></div>
+            <div><span>bbox_jump</span><b style="--w: 78%">+0.27</b></div>
+            <div><span>frame_gap</span><b style="--w: 66%">+0.18</b></div>
+            <div><span>occlusion_score</span><b style="--w: 58%">+0.14</b></div>
+            <div><span>motion_consistency</span><b class="cool" style="--w: 42%">-0.07</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="report" class="section-shell report-section">
+      <div class="report-mockup">
+        <div>
+          <p class="section-kicker">Final report</p>
+          <h2>Diagnosis a CV engineer can act on.</h2>
+        </div>
+        <div class="report-card">
+          <div class="report-top"><span>VISUAL DEBUG REPORT</span><b>severity: high</b></div>
+          <div class="report-line"><small>Likely failure</small><strong>ID switch after occlusion</strong></div>
+          <div class="report-line"><small>Evidence</small><strong>embedding spike + bbox jump + frame gap</strong></div>
+          <div class="report-line"><small>Recommended next check</small><strong>threshold / ReID gallery / occlusion interval</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div>
+        <p class="section-kicker">PersenseAI</p>
+        <h2>Visual agents for perception systems.</h2>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:hello@persenseai.com">hello@persenseai.com</a>
+        <a href="https://persenseai.com/">persenseai.com</a>
+        <span>Public concept site. More links coming soon.</span>
+      </div>
+    </section>
+
+    <section class="section-shell image-prompts-section" aria-label="Optional future image prompts">
+      <details>
+        <summary>Optional real images that would improve the site</summary>
+        <ul>
+          <li>Futuristic multi-camera control room showing abstract tracking overlays; dark indigo/cyan palette; no real company logos.</li>
+          <li>Close-up of a computer vision debugging interface with bounding boxes, identity tracks, and anomaly highlights; synthetic data only.</li>
+          <li>Abstract 3D visualization of embedding clusters splitting during ReID mismatch; premium deep-tech style.</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 PersenseAI. AI that debugs Computer Vision failures.</p>
+  </footer>
+</body>
+</html>
