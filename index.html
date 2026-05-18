@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PersenseAI | Visual Agents for Perception Systems</title>
-  <meta name="description" content="PersenseAI is a visual agents and perception systems lab building diagnostic AI for tracking failures, ReID mismatches, video understanding, spatial AI, and real-world computer vision reliability." />
-  <meta name="theme-color" content="#06111f" />
-  <meta property="og:title" content="PersenseAI | Visual Agents for Perception Systems" />
-  <meta property="og:description" content="AI that senses, reasons, and diagnoses real-world vision pipelines." />
+  <title>PersenseAI | AI Agent for Computer Vision Debugging</title>
+  <meta name="description" content="PersenseAI is a visual debugging agent concept for diagnosing tracking, ReID, detection, occlusion, and video pipeline failures." />
+  <meta name="theme-color" content="#050914" />
+  <meta property="og:title" content="PersenseAI | AI Agent for Computer Vision Debugging" />
+  <meta property="og:description" content="Visual agents that turn video, logs, tracks, and model signals into actionable CV diagnostics." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://persenseai.com/" />
+  <meta property="og:image" content="https://persenseai.com/assets/og-image.svg" />
+  <meta property="og:image:type" content="image/svg+xml" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://persenseai.com/assets/og-image.svg" />
   <link rel="canonical" href="https://persenseai.com/" />
+  <link rel="preload" href="assets/hero-visual.svg" as="image" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,147 +29,150 @@
       <span>PersenseAI</span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#concept">Concept</a>
-      <a href="#analyze">Analyze</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#contact">Contact</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#failures">Failures</a>
+      <a href="#signals">Signals</a>
+      <a href="#report">Report</a>
+      <a href="#demo">Demo</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Perception systems lab</p>
+        <p class="eyebrow"><span></span> Visual Debug Agent</p>
         <h1>PersenseAI</h1>
-        <h2>Visual agents for perception systems</h2>
-        <p class="hero-text">AI that senses, reasons, and diagnoses real-world vision pipelines.</p>
-        <p class="hero-subtext">Purpose-built for the failure space between frames, cameras, embeddings, thresholds, logs, and deployed computer vision behavior.</p>
+        <h2>AI that debugs CV failures.</h2>
+        <p class="hero-text">Upload video, logs, and tracks. Get likely failure, evidence, and next check.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#concept">Explore the concept</a>
-          <a class="button secondary" href="#contact">Contact</a>
+          <a class="button primary" href="#pipeline">See the workflow</a>
+          <a class="button secondary" href="mailto:hello@persenseai.com">Contact</a>
         </div>
       </div>
 
-      <div class="diagnostic-panel" aria-label="Visual diagnostics concept preview">
-        <div class="panel-topline">
-          <span class="pulse-dot"></span>
-          <span>visual-debug-agent</span>
-          <span class="panel-status">diagnostic pass</span>
-        </div>
-        <div class="vision-window">
-          <div class="track-box box-a"><span>ID 17</span></div>
-          <div class="track-box box-b"><span>ID ?</span></div>
-          <div class="track-box box-c"><span>ID 42</span></div>
-          <div class="trajectory trajectory-one"></div>
-          <div class="trajectory trajectory-two"></div>
-          <div class="occlusion-band">occlusion region</div>
-        </div>
-        <div class="agent-readout">
-          <div>
-            <strong>Likely failure</strong>
-            <span>ID switch after partial occlusion</span>
-          </div>
-          <div>
-            <strong>Signal</strong>
-            <span>ReID distance spike + missing detection</span>
-          </div>
-          <div>
-            <strong>Next check</strong>
-            <span>Inspect threshold, embedding drift, frame gap</span>
-          </div>
-        </div>
-      </div>
+      <figure class="asset-card hero-asset" aria-label="Hero product visual slot">
+        <img src="assets/hero-visual.svg" alt="Synthetic PersenseAI video diagnostic showing bounding boxes, occlusion, track paths, and an ID switch verdict." />
+        <figcaption>
+          <strong>ID switch after occlusion</strong>
+          <span>embedding spike · bbox jump · frame gap</span>
+        </figcaption>
+      </figure>
     </section>
 
-    <section id="concept" class="section-shell split-section">
-      <div>
-        <p class="section-kicker">Product concept</p>
-        <h2>The Visual Debug Agent</h2>
-      </div>
-      <div class="large-copy">
-        <p>PersenseAI is exploring a perception diagnostics agent for Computer Vision teams. Upload frames, video clips, pipeline logs, detections, tracks, or evaluation artifacts; the agent inspects the evidence, identifies likely failure modes, and produces a structured diagnostic report.</p>
-        <p>Instead of treating model reliability as a single score, the agent reasons through what happened: where the track fragmented, why identities crossed, which frames lost confidence, and what a CV engineer should inspect next.</p>
-      </div>
-    </section>
-
-    <section id="analyze" class="section-shell">
+    <section id="pipeline" class="section-shell product-section">
       <div class="section-heading">
-        <p class="section-kicker">What it can analyze</p>
-        <h2>Built for the places visual systems break.</h2>
+        <p class="section-kicker">Product flow</p>
+        <h2>From pipeline noise to diagnosis.</h2>
       </div>
-      <div class="analysis-grid">
-        <article><span>01</span><h3>Tracking failures</h3><p>Track fragmentation, trajectory jumps, missed associations, and unstable motion continuity.</p></article>
-        <article><span>02</span><h3>ID switches</h3><p>Identity flips across adjacent frames, crowded scenes, and reappearing objects.</p></article>
-        <article><span>03</span><h3>ReID mismatches</h3><p>Embedding confusion, identity collisions, cross-camera appearance variance, and threshold sensitivity.</p></article>
-        <article><span>04</span><h3>Occlusions</h3><p>Partial or full visibility loss, re-entry ambiguity, and recovery behavior after hidden intervals.</p></article>
-        <article><span>05</span><h3>Detection drift</h3><p>Confidence decay, bounding-box instability, class confusion, and missed low-light detections.</p></article>
-        <article><span>06</span><h3>Camera transitions</h3><p>Handoff failures, timing gaps, calibration assumptions, and multi-camera continuity errors.</p></article>
-        <article><span>07</span><h3>Lighting / domain shift</h3><p>Scene changes, weather, sensor variance, compression artifacts, and deployment-world mismatch.</p></article>
-        <article><span>08</span><h3>Evaluation gaps</h3><p>Metrics that hide frame-level failure patterns, edge cases, and operational reliability risks.</p></article>
+      <figure class="asset-card workflow-asset" aria-label="Workflow diagram image slot">
+        <img src="assets/workflow-diagram.svg" alt="Pipeline flow from video and logs to features, anomaly detection, agent diagnosis, and report." />
+      </figure>
+      <div class="pipeline" aria-label="Visual Debug Agent product pipeline">
+        <article class="pipe-card"><span>Input</span><h3>Video + Logs + Tracks</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Extract</span><h3>Feature Table</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Detect</span><h3>Anomaly</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Reason</span><h3>Agent Diagnosis</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Output</span><h3>Debug Report</h3></article>
       </div>
     </section>
 
-    <section id="workflow" class="section-shell workflow-section">
+    <section id="failures" class="section-shell">
       <div class="section-heading">
-        <p class="section-kicker">Agent workflow</p>
-        <h2>From visual evidence to engineering next steps.</h2>
+        <p class="section-kicker">Failure cards</p>
+        <h2>Built for CV failure modes.</h2>
       </div>
-      <div class="workflow-line" aria-label="Agent diagnostic workflow">
-        <div><span>Observe</span><p>Read frames, video, logs, and tracks as one multimodal incident.</p></div>
-        <div><span>Inspect</span><p>Locate temporal anomalies, weak detections, identity conflicts, and scene stressors.</p></div>
-        <div><span>Reason</span><p>Connect visual symptoms with pipeline components, thresholds, and model behavior.</p></div>
-        <div><span>Diagnose</span><p>Rank likely failure modes with concise evidence and affected intervals.</p></div>
-        <div><span>Recommend</span><p>Suggest the next checks, audits, tuning experiments, or data slices.</p></div>
-      </div>
-    </section>
-
-    <section class="section-shell why-section">
-      <div class="why-card">
-        <p class="section-kicker">Why it matters</p>
-        <h2>Real-world CV reliability fails between the abstractions.</h2>
-        <p>Production perception systems rarely fail as a clean model problem. They fail between frames, across cameras, inside embeddings, around thresholds, under occlusion, and within deployment constraints. PersenseAI is designed around that messy middle: the practical diagnostic layer between perception research and operating vision systems.</p>
+      <div class="failure-grid">
+        <article><span class="failure-icon switch"></span><h3>ID Switch</h3><p>identity flips</p></article>
+        <article><span class="failure-icon reid"></span><h3>ReID Mismatch</h3><p>embedding conflict</p></article>
+        <article><span class="failure-icon occlusion"></span><h3>Occlusion</h3><p>lost visibility</p></article>
+        <article><span class="failure-icon drift"></span><h3>Detection Drift</h3><p>box decay</p></article>
+        <article><span class="failure-icon handoff"></span><h3>Camera Handoff</h3><p>handover gap</p></article>
+        <article><span class="failure-icon domain"></span><h3>Domain Shift</h3><p>scene change</p></article>
       </div>
     </section>
 
-    <section id="roadmap" class="section-shell roadmap-section">
+    <section id="signals" class="section-shell">
       <div class="section-heading">
-        <p class="section-kicker">Future roadmap</p>
-        <h2>A lab roadmap for perception diagnostics.</h2>
+        <p class="section-kicker">Signals</p>
+        <h2>Feature signals become evidence.</h2>
       </div>
-      <div class="roadmap-list">
-        <div><span></span><p>Frame-level visual diagnostics</p></div>
-        <div><span></span><p>Tracking log inspection</p></div>
-        <div><span></span><p>ReID embedding audit</p></div>
-        <div><span></span><p>Multi-agent CV pipeline review</p></div>
-        <div><span></span><p>Self-healing tracker recommendations</p></div>
+      <div class="signal-grid">
+        <article class="feature-panel panel">
+          <div class="panel-title"><span></span> feature_table.track_017</div>
+          <div class="feature-table" role="table" aria-label="Feature table mockup">
+            <div class="row head"><span>feature</span><span>value</span><span>risk</span></div>
+            <div class="row"><span>frame_gap</span><span>6</span><meter min="0" max="100" value="76"></meter></div>
+            <div class="row"><span>bbox_jump</span><span>0.82</span><meter min="0" max="100" value="88"></meter></div>
+            <div class="row"><span>confidence_drop</span><span>-0.41</span><meter min="0" max="100" value="69"></meter></div>
+            <div class="row"><span>embedding_distance</span><span>0.91</span><meter min="0" max="100" value="94"></meter></div>
+            <div class="row"><span>motion_consistency</span><span>0.28</span><meter min="0" max="100" value="62"></meter></div>
+            <div class="row"><span>occlusion_score</span><span>0.77</span><meter min="0" max="100" value="81"></meter></div>
+            <div class="row alert"><span>anomaly_score</span><span>0.93</span><meter min="0" max="100" value="93"></meter></div>
+          </div>
+        </article>
+
+        <article class="shap-panel panel" aria-label="SHAP-style explanation mockup">
+          <div class="panel-title"><span></span> why suspicious?</div>
+          <h3>Suspicious track</h3>
+          <div class="shap-list">
+            <div><span>embedding_distance</span><b style="--w: 92%">+0.34</b></div>
+            <div><span>bbox_jump</span><b style="--w: 78%">+0.27</b></div>
+            <div><span>frame_gap</span><b style="--w: 66%">+0.18</b></div>
+            <div><span>occlusion_score</span><b style="--w: 58%">+0.14</b></div>
+            <div><span>motion_consistency</span><b class="cool" style="--w: 42%">-0.07</b></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="section-shell about-section">
-      <div>
-        <p class="section-kicker">About</p>
-        <h2>Applied Computer Vision, multimodal AI, and reliability.</h2>
+    <section id="report" class="section-shell report-section">
+      <div class="section-heading">
+        <p class="section-kicker">Report</p>
+        <h2>Evidence a CV engineer can act on.</h2>
       </div>
-      <p>PersenseAI is built around applied Computer Vision, tracking, ReID, video understanding, spatial AI, multimodal reasoning, and the reliability problems that appear when perception systems meet the physical world.</p>
+      <div class="report-layout">
+        <figure class="asset-card report-asset" aria-label="Example debug report mockup image slot">
+          <img src="assets/report-mockup.svg" alt="Debug report mockup with ID switch diagnosis, evidence, and feature contribution chart." />
+        </figure>
+        <article class="report-card">
+          <div class="report-top"><span>VISUAL DEBUG REPORT</span><b>severity: high</b></div>
+          <div class="report-line"><small>Likely failure</small><strong>ID switch after occlusion</strong></div>
+          <div class="report-line"><small>Evidence</small><strong>embedding spike + bbox jump + frame gap</strong></div>
+          <div class="report-line"><small>Recommended next check</small><strong>threshold / ReID gallery / occlusion interval</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="section-shell demo-section">
+      <div class="demo-card" aria-label="Optional animated or video demo placeholder">
+        <div class="play-orb" aria-hidden="true"></div>
+        <div>
+          <p class="section-kicker">Demo slot</p>
+          <h2>Future interactive debug replay.</h2>
+          <p>Placeholder for a short product video: upload → inspect → diagnose → report.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section-shell contact-section">
       <div>
-        <p class="section-kicker">Contact / links</p>
-        <h2>Building the diagnostic layer for visual agents.</h2>
-        <p>Interested in perception diagnostics, visual agents, or reliability tooling for Computer Vision pipelines?</p>
+        <p class="section-kicker">PersenseAI</p>
+        <h2>Visual agents for perception systems.</h2>
       </div>
       <div class="contact-card">
         <a href="mailto:hello@persenseai.com">hello@persenseai.com</a>
         <a href="https://persenseai.com/">persenseai.com</a>
-        <span>More links coming soon</span>
+        <span>Public concept site. More links coming soon.</span>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year">2026</span> PersenseAI. Visual agents for perception systems.</p>
+    <p>© 2026 PersenseAI. AI that debugs Computer Vision failures.</p>
   </footer>
 </body>
 </html>
