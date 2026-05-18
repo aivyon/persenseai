@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">PersenseAI workflow diagram</title>
+  <desc id="desc">Pipeline from video and logs to features, anomaly detection, agent diagnosis, and report.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0e1b34"/><stop offset="1" stop-color="#07101f"/></linearGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#31e8ff"/><stop offset="1" stop-color="#9b6cff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="420" rx="36" fill="#050914"/>
+  <circle cx="220" cy="80" r="180" fill="#31e8ff" opacity=".10"/>
+  <circle cx="980" cy="320" r="210" fill="#9b6cff" opacity=".12"/>
+  <g font-family="Inter, system-ui, sans-serif" font-weight="800">
+    <g transform="translate(42 96)"><rect width="180" height="170" rx="24" fill="url(#card)" stroke="#7fc6ff" stroke-opacity=".22"/><text x="24" y="46" fill="#31e8ff" font-size="13">INPUT</text><text x="24" y="86" fill="#edf7ff" font-size="25">Video + Logs</text><rect x="24" y="112" width="132" height="12" rx="6" fill="#31e8ff" opacity=".55"/><rect x="24" y="136" width="92" height="12" rx="6" fill="#9b6cff" opacity=".55"/></g>
+    <path d="M244 181h72" stroke="url(#accent)" stroke-width="5" filter="url(#glow)"/><path d="M306 166l18 15-18 15" fill="none" stroke="#31e8ff" stroke-width="5"/>
+    <g transform="translate(338 96)"><rect width="180" height="170" rx="24" fill="url(#card)" stroke="#7fc6ff" stroke-opacity=".22"/><text x="24" y="46" fill="#31e8ff" font-size="13">EXTRACT</text><text x="24" y="86" fill="#edf7ff" font-size="25">Features</text><text x="24" y="124" fill="#9db1c8" font-size="17">gap · bbox · emb</text></g>
+    <path d="M540 181h72" stroke="url(#accent)" stroke-width="5" filter="url(#glow)"/><path d="M602 166l18 15-18 15" fill="none" stroke="#31e8ff" stroke-width="5"/>
+    <g transform="translate(634 96)"><rect width="180" height="170" rx="24" fill="url(#card)" stroke="#7fc6ff" stroke-opacity=".22"/><text x="24" y="46" fill="#31e8ff" font-size="13">DETECT</text><text x="24" y="86" fill="#edf7ff" font-size="25">Anomaly</text><circle cx="88" cy="128" r="30" fill="none" stroke="#31e8ff" stroke-opacity=".45"/><circle cx="112" cy="116" r="8" fill="#ff68c8" filter="url(#glow)"/></g>
+    <path d="M836 181h72" stroke="url(#accent)" stroke-width="5" filter="url(#glow)"/><path d="M898 166l18 15-18 15" fill="none" stroke="#31e8ff" stroke-width="5"/>
+    <g transform="translate(930 96)"><rect width="228" height="170" rx="24" fill="url(#card)" stroke="#7fc6ff" stroke-opacity=".22"/><text x="24" y="46" fill="#31e8ff" font-size="13">AGENT → REPORT</text><text x="24" y="86" fill="#edf7ff" font-size="25">Diagnosis</text><text x="24" y="124" fill="#9db1c8" font-size="17">evidence + next check</text></g>
+  </g>
+</svg>

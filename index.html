@@ -1,1 +1,178 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PersenseAI | AI Agent for Computer Vision Debugging</title>
+  <meta name="description" content="PersenseAI is a visual debugging agent concept for diagnosing tracking, ReID, detection, occlusion, and video pipeline failures." />
+  <meta name="theme-color" content="#050914" />
+  <meta property="og:title" content="PersenseAI | AI Agent for Computer Vision Debugging" />
+  <meta property="og:description" content="Visual agents that turn video, logs, tracks, and model signals into actionable CV diagnostics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://persenseai.com/" />
+  <meta property="og:image" content="https://persenseai.com/assets/og-image.svg" />
+  <meta property="og:image:type" content="image/svg+xml" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://persenseai.com/assets/og-image.svg" />
+  <link rel="canonical" href="https://persenseai.com/" />
+  <link rel="preload" href="assets/hero-visual.svg" as="image" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="scan-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="PersenseAI home">
+      <span class="brand-mark">P</span>
+      <span>PersenseAI</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#pipeline">Pipeline</a>
+      <a href="#failures">Failures</a>
+      <a href="#signals">Signals</a>
+      <a href="#report">Report</a>
+      <a href="#demo">Demo</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Visual Debug Agent</p>
+        <h1>PersenseAI</h1>
+        <h2>AI that debugs CV failures.</h2>
+        <p class="hero-text">Upload video, logs, and tracks. Get likely failure, evidence, and next check.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#pipeline">See the workflow</a>
+          <a class="button secondary" href="mailto:hello@persenseai.com">Contact</a>
+        </div>
+      </div>
+
+      <figure class="asset-card hero-asset" aria-label="Hero product visual slot">
+        <img src="assets/hero-visual.svg" alt="Synthetic PersenseAI video diagnostic showing bounding boxes, occlusion, track paths, and an ID switch verdict." />
+        <figcaption>
+          <strong>ID switch after occlusion</strong>
+          <span>embedding spike · bbox jump · frame gap</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="pipeline" class="section-shell product-section">
+      <div class="section-heading">
+        <p class="section-kicker">Product flow</p>
+        <h2>From pipeline noise to diagnosis.</h2>
+      </div>
+      <figure class="asset-card workflow-asset" aria-label="Workflow diagram image slot">
+        <img src="assets/workflow-diagram.svg" alt="Pipeline flow from video and logs to features, anomaly detection, agent diagnosis, and report." />
+      </figure>
+      <div class="pipeline" aria-label="Visual Debug Agent product pipeline">
+        <article class="pipe-card"><span>Input</span><h3>Video + Logs + Tracks</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Extract</span><h3>Feature Table</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Detect</span><h3>Anomaly</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Reason</span><h3>Agent Diagnosis</h3></article>
+        <div class="pipe-arrow">→</div>
+        <article class="pipe-card"><span>Output</span><h3>Debug Report</h3></article>
+      </div>
+    </section>
+
+    <section id="failures" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker">Failure cards</p>
+        <h2>Built for CV failure modes.</h2>
+      </div>
+      <div class="failure-grid">
+        <article><span class="failure-icon switch"></span><h3>ID Switch</h3><p>identity flips</p></article>
+        <article><span class="failure-icon reid"></span><h3>ReID Mismatch</h3><p>embedding conflict</p></article>
+        <article><span class="failure-icon occlusion"></span><h3>Occlusion</h3><p>lost visibility</p></article>
+        <article><span class="failure-icon drift"></span><h3>Detection Drift</h3><p>box decay</p></article>
+        <article><span class="failure-icon handoff"></span><h3>Camera Handoff</h3><p>handover gap</p></article>
+        <article><span class="failure-icon domain"></span><h3>Domain Shift</h3><p>scene change</p></article>
+      </div>
+    </section>
+
+    <section id="signals" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker">Signals</p>
+        <h2>Feature signals become evidence.</h2>
+      </div>
+      <div class="signal-grid">
+        <article class="feature-panel panel">
+          <div class="panel-title"><span></span> feature_table.track_017</div>
+          <div class="feature-table" role="table" aria-label="Feature table mockup">
+            <div class="row head"><span>feature</span><span>value</span><span>risk</span></div>
+            <div class="row"><span>frame_gap</span><span>6</span><meter min="0" max="100" value="76"></meter></div>
+            <div class="row"><span>bbox_jump</span><span>0.82</span><meter min="0" max="100" value="88"></meter></div>
+            <div class="row"><span>confidence_drop</span><span>-0.41</span><meter min="0" max="100" value="69"></meter></div>
+            <div class="row"><span>embedding_distance</span><span>0.91</span><meter min="0" max="100" value="94"></meter></div>
+            <div class="row"><span>motion_consistency</span><span>0.28</span><meter min="0" max="100" value="62"></meter></div>
+            <div class="row"><span>occlusion_score</span><span>0.77</span><meter min="0" max="100" value="81"></meter></div>
+            <div class="row alert"><span>anomaly_score</span><span>0.93</span><meter min="0" max="100" value="93"></meter></div>
+          </div>
+        </article>
+
+        <article class="shap-panel panel" aria-label="SHAP-style explanation mockup">
+          <div class="panel-title"><span></span> why suspicious?</div>
+          <h3>Suspicious track</h3>
+          <div class="shap-list">
+            <div><span>embedding_distance</span><b style="--w: 92%">+0.34</b></div>
+            <div><span>bbox_jump</span><b style="--w: 78%">+0.27</b></div>
+            <div><span>frame_gap</span><b style="--w: 66%">+0.18</b></div>
+            <div><span>occlusion_score</span><b style="--w: 58%">+0.14</b></div>
+            <div><span>motion_consistency</span><b class="cool" style="--w: 42%">-0.07</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="report" class="section-shell report-section">
+      <div class="section-heading">
+        <p class="section-kicker">Report</p>
+        <h2>Evidence a CV engineer can act on.</h2>
+      </div>
+      <div class="report-layout">
+        <figure class="asset-card report-asset" aria-label="Example debug report mockup image slot">
+          <img src="assets/report-mockup.svg" alt="Debug report mockup with ID switch diagnosis, evidence, and feature contribution chart." />
+        </figure>
+        <article class="report-card">
+          <div class="report-top"><span>VISUAL DEBUG REPORT</span><b>severity: high</b></div>
+          <div class="report-line"><small>Likely failure</small><strong>ID switch after occlusion</strong></div>
+          <div class="report-line"><small>Evidence</small><strong>embedding spike + bbox jump + frame gap</strong></div>
+          <div class="report-line"><small>Recommended next check</small><strong>threshold / ReID gallery / occlusion interval</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="demo" class="section-shell demo-section">
+      <div class="demo-card" aria-label="Optional animated or video demo placeholder">
+        <div class="play-orb" aria-hidden="true"></div>
+        <div>
+          <p class="section-kicker">Demo slot</p>
+          <h2>Future interactive debug replay.</h2>
+          <p>Placeholder for a short product video: upload → inspect → diagnose → report.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div>
+        <p class="section-kicker">PersenseAI</p>
+        <h2>Visual agents for perception systems.</h2>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:hello@persenseai.com">hello@persenseai.com</a>
+        <a href="https://persenseai.com/">persenseai.com</a>
+        <span>Public concept site. More links coming soon.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 PersenseAI. AI that debugs Computer Vision failures.</p>
+  </footer>
+</body>
+</html>
