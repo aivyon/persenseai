@@ -2,7 +2,7 @@
 
 Purpose-built static website for **PersenseAI** at `persenseai.com`.
 
-PersenseAI is positioned as a visual agents and perception systems lab focused on multimodal reasoning, tracking diagnostics, video understanding, spatial AI, and real-world computer vision reliability.
+PersenseAI is positioned as a visual debugging agent concept for Computer Vision, tracking, ReID, detection, occlusion, and video pipeline reliability.
 
 ## Website
 
@@ -12,21 +12,25 @@ PersenseAI is positioned as a visual agents and perception systems lab focused o
 - GitHub Pages compatible
 - Custom domain configured with `CNAME`
 
-## Product direction
+## Visual product concept
 
-The site presents PersenseAI's future product concept: a **Visual Debug Agent / Perception Diagnostics Agent** that helps Computer Vision engineers investigate:
+The homepage shows the visual product flow:
 
-- tracking failures
-- ID switches
-- ReID mismatches
-- occlusions
-- detection drift
-- camera transitions
-- lighting and domain shift
-- model evaluation gaps
+`Video + Logs + Tracks → Feature Table → Anomaly Detection → Agent Diagnosis → Report`
 
-## Files
+It uses pure HTML/CSS to communicate the product quickly with:
 
-- `index.html` — page structure, SEO metadata, and content
-- `styles.css` — responsive dark deep-tech visual system
-- `CNAME` — custom domain configuration
+- hero diagnostic console
+- workflow pipeline cards
+- Computer Vision failure cards
+- track feature table mockup
+- SHAP-style feature contribution blocks
+- final diagnostic report mockup
+
+## Optional future images
+
+The site works without external images. If image assets are added later, useful prompts would be:
+
+1. Futuristic multi-camera control room with abstract tracking overlays; dark indigo/cyan palette; no logos.
+2. Synthetic Computer Vision debugging interface with bounding boxes, identity tracks, and anomaly highlights.
+3. Abstract 3D embedding clusters splitting during a ReID mismatch; premium deep-tech style.
