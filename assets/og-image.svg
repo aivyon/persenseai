@@ -1,11 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">PersenseAI Open Graph image</title>
-  <desc id="desc">PersenseAI visual debugging agent for computer vision failures.</desc>
-  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050914"/><stop offset=".55" stop-color="#07182f"/><stop offset="1" stop-color="#160d35"/></linearGradient><linearGradient id="text" x1="0" x2="1"><stop stop-color="#ffffff"/><stop offset=".45" stop-color="#b9ecff"/><stop offset="1" stop-color="#a18cff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630"><stop stop-color="#050914"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="206" cy="124" r="240" fill="#31e8ff" opacity=".14"/><circle cx="950" cy="480" r="280" fill="#9b6cff" opacity=".16"/>
-  <text x="80" y="170" fill="#31e8ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28" font-weight="800" letter-spacing="4">VISUAL DEBUG AGENT</text>
-  <text x="80" y="300" fill="url(#text)" font-family="Inter, system-ui, sans-serif" font-size="104" font-weight="900" letter-spacing="-8">PersenseAI</text>
-  <text x="86" y="380" fill="#edf7ff" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800">AI that debugs CV failures.</text>
-  <g transform="translate(765 140)" filter="url(#glow)"><rect x="0" y="0" width="292" height="350" rx="32" fill="#07101f" stroke="#7fc6ff" stroke-opacity=".35"/><rect x="54" y="120" width="72" height="118" rx="10" fill="none" stroke="#31e8ff" stroke-width="4"/><rect x="164" y="94" width="68" height="108" rx="10" fill="none" stroke="#ff68c8" stroke-width="4"/><path d="M84 250C130 216 166 214 222 246" fill="none" stroke="#31e8ff" stroke-width="4"/><text x="40" y="300" fill="#edf7ff" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">ID switch detected</text></g>
+  <circle cx="980" cy="110" r="240" fill="#8b5cf6" opacity=".16"/>
+  <circle cx="110" cy="560" r="260" fill="#22d3ee" opacity=".10"/>
+  <rect x="72" y="76" width="1056" height="478" rx="34" fill="#0b1220" stroke="#38bdf8" stroke-opacity=".25"/>
+  <text x="116" y="164" fill="#67e8f9" font-family="Inter,Arial" font-size="28" letter-spacing=".16em">PERSENSEAI</text>
+  <text x="116" y="254" fill="#f8fafc" font-family="Inter,Arial" font-size="68" font-weight="900">AI that debugs</text>
+  <text x="116" y="334" fill="#f8fafc" font-family="Inter,Arial" font-size="68" font-weight="900">Computer Vision failures</text>
+  <text x="116" y="405" fill="#cbd5e1" font-family="Inter,Arial" font-size="30">Video + Logs + Tracks → Diagnosis + Evidence + Next Check</text>
+  <g transform="translate(820 238)">
+    <path d="M30 110C80 20 190 20 240 110C190 200 80 200 30 110Z" stroke="url(#accent)" stroke-width="12"/>
+    <circle cx="135" cy="110" r="42" fill="url(#accent)"/>
+    <rect x="0" y="0" width="60" height="60" rx="10" stroke="#22d3ee" stroke-width="8"/>
+    <rect x="210" y="160" width="60" height="60" rx="10" stroke="#8b5cf6" stroke-width="8"/>
+  </g>
 </svg>
