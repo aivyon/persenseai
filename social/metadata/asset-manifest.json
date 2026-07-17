@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "asset_count": 40,
+  "publication_canvas": {
+    "width": 1080,
+    "height": 1350,
+    "ratio": "4:5",
+    "color_mode": "RGB"
+  },
+  "assets": [
+    {
+      "path": "pipeline-carousel/source/slide-01.svg",
+      "bytes": 6336,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-02.svg",
+      "bytes": 6022,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-03.svg",
+      "bytes": 5444,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-04.svg",
+      "bytes": 5911,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-05.svg",
+      "bytes": 6634,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-06.svg",
+      "bytes": 7038,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-07.svg",
+      "bytes": 4736,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/source/slide-08.svg",
+      "bytes": 4914,
+      "media_type": "image/svg+xml",
+      "intended_use": "Full pipeline carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-01.svg",
+      "bytes": 7385,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-02.svg",
+      "bytes": 6286,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-03.svg",
+      "bytes": 10645,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-04.svg",
+      "bytes": 6119,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-05.svg",
+      "bytes": 6191,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-06.svg",
+      "bytes": 8334,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-07.svg",
+      "bytes": 8429,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-08.svg",
+      "bytes": 5584,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "agent-reward-carousel/source/slide-09.svg",
+      "bytes": 5628,
+      "media_type": "image/svg+xml",
+      "intended_use": "Agent Progress Reward carousel editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "cheatsheets/source/persenseai-pipeline-cheatsheet.svg",
+      "bytes": 6739,
+      "media_type": "image/svg+xml",
+      "intended_use": "Standalone cheatsheet editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "cheatsheets/source/agent-progress-reward-cheatsheet.svg",
+      "bytes": 8657,
+      "media_type": "image/svg+xml",
+      "intended_use": "Standalone cheatsheet editable source",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      }
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-01.png",
+      "bytes": 496057,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-02.png",
+      "bytes": 434716,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-03.png",
+      "bytes": 473385,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-04.png",
+      "bytes": 513725,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-05.png",
+      "bytes": 511516,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-06.png",
+      "bytes": 475755,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-07.png",
+      "bytes": 453841,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "pipeline-carousel/png/pipeline-08.png",
+      "bytes": 447708,
+      "media_type": "image/png",
+      "intended_use": "Full pipeline carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-01.png",
+      "bytes": 514931,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-02.png",
+      "bytes": 362696,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-03.png",
+      "bytes": 464954,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-04.png",
+      "bytes": 434712,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-05.png",
+      "bytes": 497924,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-06.png",
+      "bytes": 503505,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-07.png",
+      "bytes": 504077,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-08.png",
+      "bytes": 423863,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "agent-reward-carousel/png/agent-reward-09.png",
+      "bytes": 522200,
+      "media_type": "image/png",
+      "intended_use": "Agent Progress Reward carousel publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "cheatsheets/png/persenseai-pipeline-cheatsheet.png",
+      "bytes": 405447,
+      "media_type": "image/png",
+      "intended_use": "Standalone cheatsheet publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "cheatsheets/png/agent-progress-reward-cheatsheet.png",
+      "bytes": 498425,
+      "media_type": "image/png",
+      "intended_use": "Standalone cheatsheet publication export",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "preview-desktop.png",
+      "bytes": 296236,
+      "media_type": "image/png",
+      "intended_use": "Preview-page review capture",
+      "dimensions": {
+        "width": 1440,
+        "height": 1100
+      },
+      "color_mode": "RGB"
+    },
+    {
+      "path": "preview-mobile.png",
+      "bytes": 147895,
+      "media_type": "image/png",
+      "intended_use": "Preview-page review capture",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "color_mode": "RGB"
+    }
+  ]
+}

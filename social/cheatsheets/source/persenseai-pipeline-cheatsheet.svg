@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">01 / 01</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · CHEAT SHEET</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">PersenseAI Multimodal</tspan><tspan x="72" dy="75.6">Reasoning Pipeline</tspan></text>
+<line x1="72" y1="365.6" x2="1008" y2="365.6" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<rect x="72" y="410" width="936" height="96" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#53e0d0" stroke-width="2"/>
+<text x="104" y="448" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">INPUTS</text>
+<text x="104" y="486" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Video · Images · Text · Audio · Sensors</tspan></text>
+<line x1="540" y1="506" x2="540" y2="518" stroke="#53e0d0" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="518" width="936" height="96" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#8492ff" stroke-width="2"/>
+<text x="104" y="556" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">OBSERVATIONS</text>
+<text x="104" y="594" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Entities · Events · Time · Confidence · Provenance</tspan></text>
+<line x1="540" y1="614" x2="540" y2="626" stroke="#8492ff" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="626" width="936" height="96" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#f4c768" stroke-width="2"/>
+<text x="104" y="664" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">TEMPORAL EVALUATION</text>
+<text x="104" y="702" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Visual Reward · Progress · Failure Signals</tspan></text>
+<line x1="540" y1="722" x2="540" y2="734" stroke="#f4c768" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="734" width="936" height="96" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="2"/>
+<text x="104" y="772" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">EVIDENCE REASONING</text>
+<text x="104" y="810" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Evidence Graph · Support · Contradiction</tspan></text>
+<line x1="540" y1="830" x2="540" y2="842" stroke="#4ad5a5" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="842" width="936" height="120" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#53e0d0" stroke-width="2"/>
+<text x="104" y="880" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">UTILITY</text>
+<text x="104" y="918" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Information Gain · Uncertainty · Redundancy</tspan><tspan x="104" dy="34.0">Counterfactuals</tspan></text>
+<line x1="540" y1="962" x2="540" y2="974" stroke="#53e0d0" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="974" width="936" height="120" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#8492ff" stroke-width="2"/>
+<text x="104" y="1012" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">AGENT</text>
+<text x="104" y="1050" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Select Tool · Update State · Replan</tspan><tspan x="104" dy="34.0">Track Budget · Stop</tspan></text>
+<line x1="540" y1="1094" x2="540" y2="1106" stroke="#8492ff" stroke-width="4" stroke-linecap="round"/>
+<rect x="72" y="1106" width="936" height="96" rx="16" fill="#0d192b" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="2"/>
+<text x="104" y="1144" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">OUTPUT</text>
+<text x="104" y="1182" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="104" dy="0">Grounded Answer  or  Inconclusive Stop</tspan></text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1294" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="72" dy="0">Synthetic, inspectable, bounded research prototypes</tspan><tspan x="72" dy="34.0">persenseai.com</tspan></text>
+</svg>

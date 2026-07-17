@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">06 / 09</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · AGENT PROGRESS REWARD</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">Positive progress reward</tspan></text>
+<line x1="72" y1="290.0" x2="1008" y2="290.0" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="334.0" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0">TRANSPARENT CONTRIBUTIONS</text>
+<text x="72" y="430.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">uncertainty reduction</text>
+<rect x="520" y="394.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="394.0" width="352.8" height="46" rx="10" fill="#53e0d0" fill-opacity="0.82" stroke="#53e0d0" stroke-width="0"/>
+<text x="1008" y="430.0" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.84</text>
+<text x="72" y="497.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">information gain</text>
+<rect x="520" y="461.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="461.0" width="302.4" height="46" rx="10" fill="#8492ff" fill-opacity="0.82" stroke="#8492ff" stroke-width="0"/>
+<text x="1008" y="497.0" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.72</text>
+<text x="72" y="564.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">grounded claim</text>
+<rect x="520" y="528.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="528.0" width="268.8" height="46" rx="10" fill="#4ad5a5" fill-opacity="0.82" stroke="#4ad5a5" stroke-width="0"/>
+<text x="1008" y="564.0" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.64</text>
+<text x="72" y="631.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">provenance</text>
+<rect x="520" y="595.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="595.0" width="231.00000000000003" height="46" rx="10" fill="#f4c768" fill-opacity="0.82" stroke="#f4c768" stroke-width="0"/>
+<text x="1008" y="631.0" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.55</text>
+<text x="72" y="698.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">contradiction resolved</text>
+<rect x="520" y="662.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="662.0" width="327.6" height="46" rx="10" fill="#4ad5a5" fill-opacity="0.82" stroke="#4ad5a5" stroke-width="0"/>
+<text x="1008" y="698.0" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.78</text>
+<text x="72" y="765.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">cross-modal</text>
+<rect x="520" y="729.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="729.0" width="252.0" height="46" rx="10" fill="#53e0d0" fill-opacity="0.82" stroke="#53e0d0" stroke-width="0"/>
+<text x="1008" y="765.0" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.60</text>
+<text x="72" y="832.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">answer coverage</text>
+<rect x="520" y="796.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="796.0" width="201.6" height="46" rx="10" fill="#8492ff" fill-opacity="0.82" stroke="#8492ff" stroke-width="0"/>
+<text x="1008" y="832.0" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.48</text>
+<text x="72" y="899.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">graph connectivity</text>
+<rect x="520" y="863.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="863.0" width="168.0" height="46" rx="10" fill="#f4c768" fill-opacity="0.82" stroke="#f4c768" stroke-width="0"/>
+<text x="1008" y="899.0" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.40</text>
+<text x="72" y="966.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start" letter-spacing="0">cited answer</text>
+<rect x="520" y="930.0" width="420" height="46" rx="10" fill="#16243a" fill-opacity="1.0" stroke="#29405f" stroke-width="1"/>
+<rect x="520" y="930.0" width="369.6" height="46" rx="10" fill="#4ad5a5" fill-opacity="0.82" stroke="#4ad5a5" stroke-width="0"/>
+<text x="1008" y="966.0" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="end" letter-spacing="0">+0.88</text>
+<text x="72" y="1185" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">Positive total rises when the state becomes better grounded.</text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1315" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start" letter-spacing="0">Deterministic · no LLM planning</text>
+<text x="1008" y="1315" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">AGENT REWARD  ·  6/9</text>
+</svg>

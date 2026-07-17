@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">05 / 09</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · AGENT PROGRESS REWARD</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">The result updates the</tspan><tspan x="72" dy="75.6">investigation</tspan></text>
+<line x1="72" y1="365.6" x2="1008" y2="365.6" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="409.6" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0">ONE TOOL RESULT · TWO STATES</text>
+<text x="270" y="499.6" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="750" text-anchor="middle" letter-spacing="0">BEFORE</text>
+<text x="810" y="499.6" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="750" text-anchor="middle" letter-spacing="0">AFTER</text>
+<circle cx="160" cy="750" r="34" fill="#12213a" fill-opacity="1.0" stroke="#8492ff" stroke-width="4"/>
+<circle cx="700" cy="735" r="34" fill="#12213a" fill-opacity="1.0" stroke="#8492ff" stroke-width="4"/>
+<circle cx="260" cy="840" r="34" fill="#12213a" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="4"/>
+<circle cx="800" cy="815" r="34" fill="#12213a" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="4"/>
+<circle cx="360" cy="750" r="34" fill="#12213a" fill-opacity="1.0" stroke="#f4c768" stroke-width="4"/>
+<circle cx="900" cy="735" r="34" fill="#12213a" fill-opacity="1.0" stroke="#f4c768" stroke-width="4"/>
+<line x1="160" y1="750" x2="260" y2="840" stroke="#8492ff" stroke-width="4" stroke-linecap="round"/>
+<line x1="260" y1="840" x2="360" y2="750" stroke="#4ad5a5" stroke-width="4" stroke-linecap="round"/>
+<line x1="700" y1="735" x2="800" y2="815" stroke="#4ad5a5" stroke-width="5" stroke-linecap="round"/>
+<line x1="800" y1="815" x2="900" y2="735" stroke="#4ad5a5" stroke-width="5" stroke-linecap="round"/>
+<line x1="700" y1="735" x2="900" y2="735" stroke="#53e0d0" stroke-width="5" stroke-linecap="round"/>
+<line x1="450" y1="800" x2="630" y2="800" stroke="#53e0d0" stroke-width="4" stroke-linecap="round"/>
+<path d="M614 788 L630 800 L614 812" fill="none" stroke="#53e0d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0"/>
+<text x="72" y="940" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">SUPPORT</text>
+<text x="1008" y="940" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="end" letter-spacing="0">0.50 → 0.84</text>
+<text x="72" y="998" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">UNCERTAINTY</text>
+<text x="1008" y="998" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="end" letter-spacing="0">1.00 → 0.62</text>
+<text x="72" y="1056" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">CONTRADICTION</text>
+<text x="1008" y="1056" fill="#ff7188" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="end" letter-spacing="0">open → resolved</text>
+<text x="72" y="1114" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">PROVENANCE</text>
+<text x="1008" y="1114" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="end" letter-spacing="0">0.91 → 0.95</text>
+<text x="72" y="1172" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">BUDGET</text>
+<text x="1008" y="1172" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="end" letter-spacing="0">10 → 8 steps</text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1315" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start" letter-spacing="0">Deterministic · no LLM planning</text>
+<text x="1008" y="1315" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">AGENT REWARD  ·  5/9</text>
+</svg>

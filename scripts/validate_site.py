@@ -29,7 +29,7 @@ def local_target(source: Path, href: str) -> Path | None:
 
 
 def main() -> None:
-    html_files=sorted(ROOT.rglob("*.html")); assert len(html_files) == 6
+    html_files=sorted(ROOT.rglob("*.html")); assert len(html_files) == 7
     markers=["/"+"home/",r"github\.com/(?!aivyon/persenseai(?:[/.]|$))","actions/"+"runs/","gh"+r"[opsu]_",
              "github_"+"pat_",r"api[_-]?key",r"bearer\s+[a-z0-9]"]
     forbidden=re.compile("("+"|".join(markers)+")",re.I)
