@@ -29,8 +29,10 @@ def local_target(source: Path, href: str) -> Path | None:
 
 
 def main() -> None:
-    html_files=sorted(ROOT.rglob("*.html")); assert len(html_files) == 5
-    forbidden=re.compile(r"(/home/|github\.com/aivyon/persenseai-labs|gho_|korinl|blackroverai|employer)",re.I)
+    html_files=sorted(ROOT.rglob("*.html")); assert len(html_files) == 6
+    markers=["/"+"home/",r"github\.com/(?!aivyon/persenseai(?:[/.]|$))","actions/"+"runs/","gh"+r"[opsu]_",
+             "github_"+"pat_",r"api[_-]?key",r"bearer\s+[a-z0-9]"]
+    forbidden=re.compile("("+"|".join(markers)+")",re.I)
     for page in html_files:
         text=page.read_text(encoding="utf-8"); assert not forbidden.search(text), f"private marker in {page}"
         parser=DocumentParser(); parser.feed(text); assert parser.title and parser.description, f"metadata missing in {page}"
@@ -41,11 +43,17 @@ def main() -> None:
             target=local_target(page,href)
             if target is not None: assert target.is_file(), f"broken link {href} in {page}"
     projects=json.loads((ROOT/"data/projects.json").read_text()); demo=json.loads((ROOT/"data/evidence-utility-demo.json").read_text())
-    assert len(projects)==3 and all((ROOT/item["page"]).is_file() for item in projects)
+    agent=json.loads((ROOT/"data/evidence-agent-demo.json").read_text())
+    assert len(projects)==4 and all((ROOT/item["page"]).is_file() for item in projects)
     assert len(demo["scenarios"])>=3 and all(s["evidence"] for s in demo["scenarios"])
+    assert agent["synthetic"] is True and len(agent["scenarios"])>=5
+    assert all(set(scenario["policies"])=={"fixed","agent"} for scenario in agent["scenarios"])
+    assert all(policy["steps"] for scenario in agent["scenarios"] for policy in scenario["policies"].values())
+    for path in [*html_files,*ROOT.glob("data/*.json"),*ROOT.glob("js/*.js")]:
+        assert not forbidden.search(path.read_text(encoding="utf-8")), f"sensitive marker in {path}"
     assert (ROOT/"CNAME").read_text().strip()=="persenseai.com"
     assert (ROOT/"assets/og/persenseai-social.png").is_file()
-    print(f"Validated {len(html_files)} pages, {len(projects)} project cards, and {len(demo['scenarios'])} mini-demo scenarios.")
+    print(f"Validated {len(html_files)} pages, {len(projects)} project cards, {len(demo['scenarios'])} utility scenarios, and {len(agent['scenarios'])} agent scenarios.")
 
 
 if __name__ == "__main__":
