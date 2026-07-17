@@ -1,16 +1,22 @@
 # PersenseAI
 
-Purpose-built static website for **PersenseAI** at `persenseai.com`.
+Static public website for [persenseai.com](https://persenseai.com), presenting PersenseAI as an independent multimodal AI research lab.
 
+## Architecture
 
+- Framework-free HTML and CSS
+- Vanilla JavaScript for project cards and the static Evidence Utility mini-demo
+- Static JSON data; no backend, external API, model call, analytics, or build step
+- GitHub Pages compatible with the custom domain in `CNAME`
+- Public project pages contain only reviewed presentation images and public descriptions—not private research source code
 
-## Website
+## Local validation
 
-- Static HTML and CSS only
-- SVG assets committed in-repo
-- No framework
-- No build step
-- GitHub Pages compatible
-- Custom domain configured with `CNAME`
+```bash
+python3 -m http.server 8000
+python3 scripts/validate_site.py
+node --check js/site.js
+node --check js/evidence-utility-demo.js
+```
 
-
+Then open `http://127.0.0.1:8000` and test the homepage, project pages, and mini-demo at desktop, tablet, and mobile widths.

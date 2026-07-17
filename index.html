@@ -1,178 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PersenseAI | Visual Diagnostics Research Notes</title>
-  <meta name="description" content="PersenseAI shares public-safe research concepts for visual diagnostics and perception-system reasoning across video, logs, tracks, and model signals." />
-  <meta name="theme-color" content="#050914" />
-  <meta property="og:title" content="PersenseAI | Visual Diagnostics Research Notes" />
-  <meta property="og:description" content="Explorations in visual diagnostics and perception-system reasoning." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://persenseai.com/" />
-  <meta property="og:image" content="https://persenseai.com/assets/og-image.svg" />
-  <meta property="og:image:type" content="image/svg+xml" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://persenseai.com/assets/og-image.svg" />
-  <link rel="canonical" href="https://persenseai.com/" />
-  <link rel="preload" href="assets/hero-visual.svg" as="image" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PersenseAI | Independent Multimodal AI Research</title>
+  <meta name="description" content="PersenseAI explores how video, text, audio, and sensor observations become grounded explanations across time, evidence, uncertainty, and provenance.">
+  <meta name="theme-color" content="#07101d">
+  <link rel="canonical" href="https://persenseai.com/">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://persenseai.com/">
+  <meta property="og:title" content="PersenseAI | From observations to grounded reasoning">
+  <meta property="og:description" content="Independent multimodal AI research across time, evidence, uncertainty, and provenance.">
+  <meta property="og:image" content="https://persenseai.com/assets/og/persenseai-social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PersenseAI | From observations to grounded reasoning"><meta name="twitter:description" content="Independent multimodal AI research across time, evidence, uncertainty, and provenance."><meta name="twitter:image" content="https://persenseai.com/assets/og/persenseai-social.png">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"PersenseAI","url":"https://persenseai.com/","description":"Independent multimodal AI research notes and synthetic demos."}</script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <div class="scan-grid" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="PersenseAI home">
-      <span class="brand-mark">P</span>
-      <span>PersenseAI</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#pipeline">Pipeline</a>
-      <a href="#failures">Failures</a>
-      <a href="#signals">Signals</a>
-      <a href="#report">Report</a>
-      <a href="#demo">Demo</a>
-    </nav>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header shell">
+    <a class="brand" href="#top" aria-label="PersenseAI home"><span class="brand-mark" aria-hidden="true">P</span>PersenseAI</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Primary navigation"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#pipeline">Pipeline</a><a href="#demo">Live Demo</a><a href="#notes">Notes</a><a href="#about">About</a></nav>
   </header>
-
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span> Visual Diagnostics Research</p>
-        <h1>PersenseAI</h1>
-        <h2>Explorations in visual diagnostics and perception-system reasoning.</h2>
-        <p class="hero-text">Public-safe research concepts for understanding how Computer Vision systems behave across video, logs, tracks, and model signals.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#pipeline">See the concept workflow</a>
-          <a class="button secondary" href="mailto:hello@persenseai.com">Contact</a>
-        </div>
-      </div>
-
-      <figure class="asset-card hero-asset" aria-label="Hero research visual slot">
-        <img src="assets/hero-visual.svg" alt="Synthetic PersenseAI video diagnostic showing bounding boxes, occlusion, track paths, and an ID switch verdict." />
-        <figcaption>
-          <strong>ID switch after occlusion</strong>
-          <span>embedding spike · bbox jump · frame gap</span>
-        </figcaption>
-      </figure>
-    </section>
-
-    <section id="pipeline" class="section-shell product-section">
-      <div class="section-heading">
-        <p class="section-kicker">Concept workflow</p>
-        <h2>From observation noise to research-oriented diagnosis.</h2>
-      </div>
-      <figure class="asset-card workflow-asset" aria-label="Workflow diagram image slot">
-        <img src="assets/workflow-diagram.svg" alt="Concept flow from video and logs to features, anomaly signals, diagnostic reasoning, and analysis summary." />
-      </figure>
-      <div class="pipeline" aria-label="Visual diagnostics concept workflow">
-        <article class="pipe-card"><span>Input</span><h3>Video + Logs + Tracks</h3></article>
-        <div class="pipe-arrow">→</div>
-        <article class="pipe-card"><span>Extract</span><h3>Feature Table</h3></article>
-        <div class="pipe-arrow">→</div>
-        <article class="pipe-card"><span>Detect</span><h3>Anomaly Signals</h3></article>
-        <div class="pipe-arrow">→</div>
-        <article class="pipe-card"><span>Reason</span><h3>Diagnostic Reasoning</h3></article>
-        <div class="pipe-arrow">→</div>
-        <article class="pipe-card"><span>Output</span><h3>Analysis Summary</h3></article>
+  <main id="content">
+    <section class="hero shell" id="top">
+      <div class="hero-copy reveal"><p class="eyebrow">Independent Multimodal AI Research</p><h1>From observations to <span>grounded reasoning.</span></h1><p class="lede">Visual research notes and interactive demos that connect video, text, audio, and sensor observations to temporal evidence, uncertainty, provenance, and explainable conclusions.</p><div class="actions"><a class="button primary" href="#projects">Explore the research</a><a class="button ghost" href="#demo">Try the mini-demo</a></div></div>
+      <div class="reasoning-visual reveal" aria-label="Multimodal reasoning pipeline illustration">
+        <div class="modality-stack"><span>Video <i></i></span><span>Text <i></i></span><span>Audio <i></i></span><span>Sensors <i></i></span></div>
+        <div class="flow-line" aria-hidden="true"></div>
+        <div class="graph-stage"><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span><svg viewBox="0 0 280 220" aria-hidden="true"><path d="M45 45L142 85L225 42M142 85L78 174M142 85L225 168M78 174L225 168"/></svg><b>temporal evidence graph</b></div>
+        <div class="hypothesis-card"><small>HYPOTHESIS UPDATE</small><strong>support <em>0.76</em></strong><span><i style="width:76%"></i></span><small>uncertainty ↓ 0.31</small></div>
+        <div class="answer-chip">Grounded answer <span>→</span></div>
       </div>
     </section>
 
-    <section id="failures" class="section-shell">
-      <div class="section-heading">
-        <p class="section-kicker">Failure cards</p>
-        <h2>Exploring common CV failure modes.</h2>
-      </div>
-      <div class="failure-grid">
-        <article><span class="failure-icon switch"></span><h3>ID Switch</h3><p>identity flips</p></article>
-        <article><span class="failure-icon reid"></span><h3>ReID Mismatch</h3><p>embedding conflict</p></article>
-        <article><span class="failure-icon occlusion"></span><h3>Occlusion</h3><p>lost visibility</p></article>
-        <article><span class="failure-icon drift"></span><h3>Detection Drift</h3><p>box decay</p></article>
-        <article><span class="failure-icon handoff"></span><h3>Camera Handoff</h3><p>handover gap</p></article>
-        <article><span class="failure-icon domain"></span><h3>Domain Shift</h3><p>scene change</p></article>
-      </div>
-    </section>
+    <section class="section shell" id="research"><div class="section-head"><p class="eyebrow">Research principles</p><h2>Make the reasoning inspectable.</h2><p>Each prototype keeps observations, assumptions, uncertainty, and limits visible.</p></div><div class="principle-grid">
+      <article><b>01</b><h3>Provenance first</h3><p>Claims remain connected to synthetic source IDs, frames, events, and generation records.</p></article><article><b>02</b><h3>Reasoning across time</h3><p>Timelines reveal when support rises, failure occurs, or a contradiction changes the state.</p></article><article><b>03</b><h3>Uncertainty made visible</h3><p>Confidence and entropy are shown as model outputs with explicit assumptions—not facts.</p></article><article><b>04</b><h3>Multimodal evidence</h3><p>Video, text, audio, and sensors contribute distinct, traceable observations.</p></article><article><b>05</b><h3>Reproducible synthetic demos</h3><p>Compact deterministic scenarios make expected behavior testable without real people or cases.</p></article><article><b>06</b><h3>Public research origins</h3><p>Established prior work is separated from PersenseAI implementation choices and limitations.</p></article>
+    </div></section>
 
-    <section id="signals" class="section-shell">
-      <div class="section-heading">
-        <p class="section-kicker">Signals</p>
-        <h2>Feature signals become evidence.</h2>
-      </div>
-      <div class="signal-grid">
-        <article class="feature-panel panel">
-          <div class="panel-title"><span></span> feature_table.track_017</div>
-          <div class="feature-table" role="table" aria-label="Feature table mockup">
-            <div class="row head"><span>feature</span><span>value</span><span>risk</span></div>
-            <div class="row"><span>frame_gap</span><span>6</span><meter min="0" max="100" value="76"></meter></div>
-            <div class="row"><span>bbox_jump</span><span>0.82</span><meter min="0" max="100" value="88"></meter></div>
-            <div class="row"><span>confidence_drop</span><span>-0.41</span><meter min="0" max="100" value="69"></meter></div>
-            <div class="row"><span>embedding_distance</span><span>0.91</span><meter min="0" max="100" value="94"></meter></div>
-            <div class="row"><span>motion_consistency</span><span>0.28</span><meter min="0" max="100" value="62"></meter></div>
-            <div class="row"><span>occlusion_score</span><span>0.77</span><meter min="0" max="100" value="81"></meter></div>
-            <div class="row alert"><span>anomaly_score</span><span>0.93</span><meter min="0" max="100" value="93"></meter></div>
-          </div>
-        </article>
+    <section class="section shell" id="projects"><div class="section-head split"><div><p class="eyebrow">Featured projects</p><h2>Three views of temporal reasoning.</h2></div><p>A sequence from dense progress signals, to provenance-backed claims, to marginal evidence utility.</p></div><div id="project-grid" class="project-grid" aria-live="polite"><noscript>Project cards require JavaScript. Open the project pages from the sitemap.</noscript></div></section>
 
-        <article class="shap-panel panel" aria-label="SHAP-style explanation mockup">
-          <div class="panel-title"><span></span> why suspicious?</div>
-          <h3>Suspicious track</h3>
-          <div class="shap-list">
-            <div><span>embedding_distance</span><b style="--w: 92%">+0.34</b></div>
-            <div><span>bbox_jump</span><b style="--w: 78%">+0.27</b></div>
-            <div><span>frame_gap</span><b style="--w: 66%">+0.18</b></div>
-            <div><span>occlusion_score</span><b style="--w: 58%">+0.14</b></div>
-            <div><span>motion_consistency</span><b class="cool" style="--w: 42%">-0.07</b></div>
-          </div>
-        </article>
-      </div>
-    </section>
+    <section class="section pipeline-section" id="pipeline"><div class="shell"><div class="section-head"><p class="eyebrow">Unified research pipeline</p><h2>One traceable path through multimodal evidence.</h2></div><div class="pipeline-flow" aria-label="Unified research pipeline"><div><small>Inputs</small><strong>Video + Images<br>Text + Audio + Sensors</strong></div><i>→</i><div><small>Observations</small><strong>Entities · Events · Time<br>Confidence · Provenance</strong></div><i>→</i><div><small>Reasoning</small><strong>Temporal Evidence Graph<br>Support + Contradiction</strong></div><i>→</i><div><small>Evaluation</small><strong>Evidence Utility<br>Uncertainty</strong></div><i>→</i><div><small>Output</small><strong>Grounded Answers<br>Next Evidence</strong></div></div></div></section>
 
-    <section id="report" class="section-shell report-section">
-      <div class="section-heading">
-        <p class="section-kicker">Analysis summary</p>
-        <h2>Research evidence for iterative CV investigation.</h2>
-      </div>
-      <div class="report-layout">
-        <figure class="asset-card report-asset" aria-label="Example analysis summary mockup image slot">
-          <img src="assets/report-mockup.svg" alt="Analysis summary mockup with ID switch hypothesis, evidence, and feature contribution chart." />
-        </figure>
-        <article class="report-card">
-          <div class="report-top"><span>VISUAL ANALYSIS NOTE</span><b>severity: high</b></div>
-          <div class="report-line"><small>Likely hypothesis</small><strong>ID switch after occlusion</strong></div>
-          <div class="report-line"><small>Evidence</small><strong>embedding spike + bbox jump + frame gap</strong></div>
-          <div class="report-line"><small>Recommended next probe</small><strong>threshold / ReID gallery / occlusion interval</strong></div>
-        </article>
-      </div>
-    </section>
+    <section class="section shell" id="demo"><div class="section-head split"><div><p class="eyebrow">Live static mini-demo</p><h2>Which evidence changed the conclusion?</h2></div><p>Client-side synthetic data. No backend, model call, external API, or analytics.</p></div><div class="demo-shell">
+      <div class="demo-controls"><label for="demo-scenario">Synthetic scenario</label><select id="demo-scenario"></select><div class="step-controls"><button id="demo-prev" type="button">← Previous</button><span id="demo-step-label" aria-live="polite"></span><button id="demo-next" type="button">Next →</button></div></div>
+      <div class="demo-hypothesis"><small>BOUNDED HYPOTHESIS</small><strong id="demo-hypothesis"></strong><div class="metric-row"><div><span>Support</span><b id="demo-support"></b><meter id="support-meter" min="0" max="1"></meter></div><div><span>Uncertainty</span><b id="demo-uncertainty"></b><meter id="uncertainty-meter" min="0" max="1"></meter></div></div></div>
+      <div id="demo-stream" class="demo-stream"></div>
+      <div class="demo-result"><div><small>COUNTERFACTUAL</small><strong id="demo-counterfactual"></strong><p id="demo-counterfactual-copy"></p></div><div><small>NEXT USEFUL EVIDENCE</small><strong id="demo-next-evidence"></strong><p id="demo-next-copy"></p></div></div>
+      <p class="disclaimer">Deterministic synthetic research prototype. Utility is an explanatory model—not truth, legal weight, or forensic validity.</p>
+    </div></section>
 
-    <section id="demo" class="section-shell demo-section">
-      <div class="demo-card" aria-label="Optional animated or video demo placeholder">
-        <div class="play-orb" aria-hidden="true"></div>
-        <div>
-          <p class="section-kicker">Demo slot</p>
-          <h2>Future interactive diagnostics replay.</h2>
-          <p>Placeholder for a short concept walkthrough: inspect → compare signals → reason → summarize.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-shell contact-section">
-      <div>
-        <p class="section-kicker">PersenseAI</p>
-        <h2>Lab notes for visual reasoning in perception systems.</h2>
-      </div>
-      <div class="contact-card">
-        <a href="mailto:hello@persenseai.com">hello@persenseai.com</a>
-        <a href="https://persenseai.com/">persenseai.com</a>
-        <span>Public research concept site. More references coming soon.</span>
-      </div>
-    </section>
+    <section class="section shell notes-layout" id="notes"><div><p class="eyebrow">Research notes</p><h2>Origins and limits stay beside the demo.</h2></div><div class="notes-copy"><p>Every demo begins with public research or an independently documented question. Established concepts are separated from implementation choices; limitations are explicit; provenance is part of the interface, not an afterthought.</p><a class="text-link" href="notes/research-origins.html">Read the research-origins note →</a></div></section>
+    <section class="section shell about" id="about"><div><p class="eyebrow">About PersenseAI</p><h2>An independent research space for multimodal reasoning.</h2></div><div><p>PersenseAI explores how observations become grounded explanations across time, evidence, uncertainty, and provenance. The work is presented through public notes and compact synthetic demos—not production or forensic systems.</p><p>Working on temporal reasoning, multimodal evidence, evaluation, or provenance? I’d be glad to compare notes.</p><a class="button primary" href="mailto:hello@persenseai.com">hello@persenseai.com</a></div></section>
   </main>
-
-  <footer class="site-footer">
-    <p>© 2026 PersenseAI. Explorations in visual diagnostics and Computer Vision reasoning.</p>
-  </footer>
-</body>
-</html>
+  <footer class="shell"><a class="brand" href="#top"><span class="brand-mark">P</span>PersenseAI</a><p>Independent multimodal AI research · Synthetic, inspectable, bounded.</p><p>© 2026 PersenseAI</p></footer>
+  <script src="js/site.js" defer></script><script src="js/evidence-utility-demo.js" defer></script>
+</body></html>
