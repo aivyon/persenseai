@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Evidence Orchestration Agent | PersenseAI</title>
+  <meta name="description" content="A browser-based synthetic demo of a bounded, provenance-aware agent that selects evidence tools and decides when to answer or stop as inconclusive.">
+  <link rel="canonical" href="https://persenseai.com/projects/evidence-orchestration-agent.html">
+  <meta property="og:type" content="article"><meta property="og:url" content="https://persenseai.com/projects/evidence-orchestration-agent.html">
+  <meta property="og:title" content="Evidence Orchestration Agent | PersenseAI"><meta property="og:description" content="What should the system inspect next — and when should it stop?">
+  <meta property="og:image" content="https://persenseai.com/assets/projects/evidence-orchestration-agent/overview.png"><meta property="og:image:width" content="1600"><meta property="og:image:height" content="1061">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Evidence Orchestration Agent | PersenseAI"><meta name="twitter:description" content="A deterministic bounded evidence agent with an inspectable trace."><meta name="twitter:image" content="https://persenseai.com/assets/projects/evidence-orchestration-agent/overview.png">
+  <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Evidence Orchestration Agent","description":"A deterministic bounded synthetic evidence agent demonstration.","url":"https://persenseai.com/projects/evidence-orchestration-agent.html","isPartOf":{"@type":"WebSite","name":"PersenseAI","url":"https://persenseai.com/"},"programmingLanguage":["HTML","CSS","JavaScript"],"isAccessibleForFree":true}</script>
+</head>
+<body class="project-body">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header shell"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">P</span>PersenseAI</a><nav aria-label="Project navigation"><a href="../index.html#projects">All projects</a><a href="#agent-demo">Agent demo</a><a href="#related-work">Related work</a><a href="mailto:hello@persenseai.com">Feedback</a></nav></header>
+  <main id="content" class="project-page shell agent-project">
+    <p class="eyebrow">Project 04 · Bounded agentic reasoning</p>
+    <h1>Evidence Orchestration Agent</h1>
+    <p class="project-question">What should the system inspect next — and when should it stop?</p>
+    <div class="agent-label">Deterministic bounded agent policy — no language model is used for planning in this public demo.</div>
+    <img class="project-hero-image" src="../assets/projects/evidence-orchestration-agent/overview.png" alt="Dark Evidence Orchestration Agent dashboard showing a bounded plan, metrics, candidate ranking, and selected tool" width="1600" height="1061">
+
+    <section class="agent-pipeline" aria-labelledby="pipeline-title"><p class="eyebrow">Inspect → update → decide</p><h2 id="pipeline-title">A closed, traceable evidence pipeline</h2><div class="pipeline-flow agent-flow" aria-label="Evidence orchestration pipeline"><div><small>Inputs</small><strong>Video · Text<br>Audio · Sensors</strong></div><i>→</i><div><small>Observe</small><strong>Typed evidence<br>Provenance + time</strong></div><i>→</i><div><small>Update</small><strong>Temporal graph<br>Utility + uncertainty</strong></div><i>→</i><div><small>Act</small><strong>One registered<br>evidence tool</strong></div><i>→</i><div><small>Stop</small><strong>Grounded answer<br>or inconclusive</strong></div></div></section>
+
+    <div class="project-details agent-details">
+      <section><h2>What makes it an agent?</h2><p>It receives a bounded goal, observes structured state, generates and ranks valid actions, selects one registered tool, consumes a step and cost budget, updates memory and evidence state, calculates progress reward, and applies explicit continuation or stop rules. The trace shows structured decision evidence—not hidden chain-of-thought.</p></section>
+      <section><h2>Registered tools</h2><ul class="tool-list"><li><code>inspect_evidence_window</code></li><li><code>inspect_visual_observation</code></li><li><code>inspect_text_observation</code></li><li><code>inspect_audio_event</code></li><li><code>inspect_sensor_event</code></li><li><code>update_evidence_graph</code></li><li><code>score_evidence_utility</code></li><li><code>detect_contradiction</code></li><li><code>run_counterfactual</code></li><li><code>compare_modalities</code></li><li><code>request_next_modality</code></li><li><code>generate_grounded_answer</code></li><li><code>stop_with_answer</code></li><li><code>stop_inconclusive</code></li></ul><p>There is no browsing, shell, external API, arbitrary code, or user-defined tool access.</p></section>
+      <section><h2>Plan–act–observe loop</h2><p>Candidate actions are scored from uncertainty reduction, evidence utility, contradiction value, provenance, novelty, redundancy, cost, latency, remaining budget, and answer completeness. Each step records candidates, selected tool, inputs, results, citations, state deltas, reward components, and stop checks.</p></section>
+      <section><h2>Agent Progress Reward</h2><p>Positive terms include information gain, grounded claims, provenance, contradiction resolution, corroboration, coverage, graph connectivity, and a cited stop. Penalties include redundancy, unsupported output, repetition, cost, latency, budget use, unresolved contradiction, premature stop, and tool failure.</p><p><strong>Progress reward is an evaluation heuristic—not truth, legal weight, or evidence validity.</strong></p></section>
+      <section><h2>Fixed pipeline versus agent</h2><p>The fixed baseline follows authored evidence order. The utility-driven policy can skip repeated frames, request a useful modality, select lower-cost sources, or test a contradiction. Results are scenario-specific: the contradiction case requires more agent steps than some simple cases and ends inconclusive rather than forcing an answer.</p></section>
+      <section><h2>Boundaries and stop rules</h2><p>The agent can act only through registered tools and is bounded by 14 steps, scenario cost, available evidence, structured memory, provenance checks, independent-source requirements, and explicit stop conditions. Missing evidence and unresolved conflict can end in an honest inconclusive state.</p></section>
+    </div>
+
+    <section id="agent-demo" class="agent-demo" aria-labelledby="agent-demo-title">
+      <div class="section-head split"><div><p class="eyebrow">Public static agent demo</p><h2 id="agent-demo-title">Inspect one bounded decision at a time.</h2></div><p>Client-side sanitized JSON. No backend, external model, API, or analytics.</p></div>
+      <p class="agent-label">Deterministic bounded agent policy — no language model is used for planning in this public demo.</p>
+      <div class="agent-demo-controls">
+        <label for="agent-scenario">Synthetic scenario<select id="agent-scenario"></select></label>
+        <label for="agent-policy">Policy<select id="agent-policy"><option value="agent">Utility-Driven Agent</option><option value="fixed">Fixed Pipeline</option></select></label>
+        <div class="agent-buttons" aria-label="Agent playback controls"><button id="agent-step" type="button">Run one step</button><button id="agent-auto" type="button">Auto-run</button><button id="agent-pause" type="button">Pause</button><button id="agent-reset" type="button">Reset</button></div>
+      </div>
+      <div class="agent-state-head"><div><small>BOUNDED GOAL</small><strong id="agent-goal"></strong></div><span id="agent-status" class="agent-status" aria-live="polite">observing</span></div>
+      <div class="agent-metrics" aria-live="polite"><div><small>Step</small><strong id="agent-step-count">0 / 0</strong></div><div><small>Support</small><strong id="agent-support">0.50</strong></div><div><small>Uncertainty</small><strong id="agent-uncertainty">1.00</strong></div><div><small>Step reward</small><strong id="agent-reward">0.00</strong></div><div><small>Cost remaining</small><strong id="agent-cost">0.00</strong></div><div><small>Steps remaining</small><strong id="agent-budget">0</strong></div></div>
+      <div class="agent-decision-grid">
+        <section><h3>Candidate actions</h3><div class="table-scroll"><table><thead><tr><th>Tool</th><th>Evidence</th><th>Score</th><th>Utility</th><th>Cost</th></tr></thead><tbody id="agent-candidates"></tbody></table></div></section>
+        <section><h3>Selected tool</h3><strong id="agent-tool" class="selected-tool"></strong><div id="agent-reasons" class="reason-codes"></div><details><summary>Structured input and result</summary><pre id="agent-io"></pre></details></section>
+      </div>
+      <section class="agent-trace-panel"><h3>Inspectable agent trace</h3><p class="trace-key">STEP → STATE → CANDIDATES → TOOL → RESULT → REWARD → NEXT DECISION</p><ol id="agent-trace" class="agent-trace"></ol></section>
+      <div class="agent-final" id="agent-final" aria-live="polite"></div>
+      <section class="agent-comparison"><h3>Final policy comparison</h3><div class="table-scroll"><table><thead><tr><th>Policy</th><th>State</th><th>Steps</th><th>Cost</th><th>Evidence</th><th>Redundant</th><th>Uncertainty</th><th>Stop reason</th></tr></thead><tbody id="agent-comparison"></tbody></table></div></section>
+      <p class="disclaimer">All evidence and traces are synthetic. This prototype makes no forensic, operational, surveillance, production, or legal-validity claim.</p>
+    </section>
+
+    <section class="gallery"><h2>Scenario gallery</h2><div><figure><img src="../assets/projects/evidence-orchestration-agent/late-contradiction.png" alt="Synthetic agent trace showing contradiction detection followed by a counterfactual tool" loading="lazy" width="1600" height="1061"><figcaption>Late contradiction changes the plan and triggers a counterfactual check.</figcaption></figure><figure><img src="../assets/projects/evidence-orchestration-agent/redundancy-comparison.png" alt="Comparison chart showing fewer steps and repeated frames for the bounded agent" loading="lazy" width="1600" height="1061"><figcaption>One clear frame replaces a burst of near-duplicates in the utility-driven run.</figcaption></figure><figure><img src="../assets/projects/evidence-orchestration-agent/budgeted-action.png" alt="Candidate action ranking for a cost-bounded synthetic evidence scenario" loading="lazy" width="1600" height="1061"><figcaption>Candidate scores expose the utility and cost tradeoff.</figcaption></figure><figure><img src="../assets/projects/evidence-orchestration-agent/inconclusive-stop.png" alt="Synthetic missing-modality run ending in an explicit inconclusive state" loading="lazy" width="1600" height="1061"><figcaption>An unavailable required modality produces no fabricated conclusion.</figcaption></figure></div></section>
+
+    <section id="related-work" class="project-details">
+      <section><h2>Related-work context</h2><p>Established foundations include <a href="https://doi.org/10.2307/1884852">bounded rationality</a>, <a href="https://doi.org/10.1016/S0004-3702(98)00023-X">planning under partial observability</a>, <a href="https://doi.org/10.1109/5.5968">active perception</a>, <a href="https://www.jstor.org/stable/2237191">value of information</a>, <a href="https://doi.org/10.1214/aoms/1177731118">sequential stopping</a>, tool-using agents such as <a href="https://openreview.net/forum?id=WE_vluYUL-X">ReAct</a>, agent evaluation such as <a href="https://proceedings.iclr.cc/paper_files/paper/2024/hash/25ae35b5b1738d80f1f03a8713e405ec-Abstract-Conference.html">GAIA</a>, and the <a href="https://www.w3.org/TR/prov-o/">W3C PROV-O</a> recommendation. PersenseAI's deterministic scoring and closed registry are implementation choices, not claims of novelty.</p></section>
+      <section><h2>Limitations</h2><p>Five authored scenarios do not establish general capability, calibration, robustness, or superiority to fixed pipelines. Scores and costs are modeled units. Citation presence does not establish source accuracy or truth. The graph is not a causal model, and the policy is not an LLM or open-world planner.</p></section>
+      <section><h2>Provenance statement</h2><p>All scenarios, evidence records, source IDs, traces, metrics, screenshots, and assets are synthetic and independently generated. The public export contains descriptions, screenshots, compact structured traces, and verified public citations—not private source code or development metadata.</p></section>
+      <section><h2>What is not claimed</h2><p>No real-person inference, autonomous monitoring, law-enforcement use, forensic judgment, operational decision-making, legal validity, or production deployment is claimed. Agent reward is not evidence validity, and deterministic reproducibility does not imply unbiased decisions.</p></section>
+    </section>
+    <section class="project-cta"><h2>Compare notes</h2><p>Working on bounded agents, active evidence acquisition, contradiction handling, provenance, or abstention?</p><a class="button primary" href="mailto:hello@persenseai.com">Share feedback</a></section>
+  </main>
+  <footer class="shell"><a href="../index.html">← PersenseAI research</a><p>Deterministic bounded agent · Synthetic evidence only</p></footer>
+  <script src="../js/evidence-agent-demo.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:04,000
+PersenseAI begins with video, images, text,
+audio, and sensor signals.
+
+2
+00:00:04,000 --> 00:00:09,000
+They become structured observations
+with time, confidence, and provenance.
+
+3
+00:00:09,000 --> 00:00:14,000
+Visual Reward tracks
+what changed over time.
+
+4
+00:00:14,000 --> 00:00:19,000
+An evidence graph connects support, contradiction,
+and unresolved uncertainty to their sources.
+
+5
+00:00:19,000 --> 00:00:24,000
+Evidence Utility estimates which observation mattered,
+while redundancy and cost remain visible.
+
+6
+00:00:24,000 --> 00:00:30,000
+A bounded orchestration agent ranks registered tools,
+updates structured state, and tracks budget.
+
+7
+00:00:30,000 --> 00:00:35,000
+Agent Progress Reward explains whether each action
+improved grounded resolution.
+
+8
+00:00:35,000 --> 00:00:40,000
+When contradiction remains, it can replan—then return
+a cited answer or stop inconclusive.

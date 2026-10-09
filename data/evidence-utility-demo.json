@@ -1,0 +1,17 @@
+{
+  "scenarios":[
+    {"id":"decisive","title":"Decisive corroboration","hypothesis":"The synthetic blue parcel crossed into Zone B.","recommendation":{"title":"Zone-reset text log","copy":"A cheap independent reset record could test whether the observed state persisted."},"evidence":[
+      {"id":"VID-101","modality":"Video","time":"1.0s","claim":"Parcel approaches the boundary.","stance":"support","utility":1.16,"support":0.70,"uncertainty":0.88,"withoutSupport":0.97,"withoutUncertainty":0.18},
+      {"id":"VID-102","modality":"Video","time":"2.0s","claim":"Occluded view places parcel beyond the boundary.","stance":"support","utility":0.34,"support":0.82,"uncertainty":0.68,"withoutSupport":0.97,"withoutUncertainty":0.18},
+      {"id":"SNS-201","modality":"Zone sensor","time":"2.4s","claim":"Independent Zone B beam changes to occupied.","stance":"support","utility":2.78,"support":0.97,"uncertainty":0.18,"withoutSupport":0.87,"withoutUncertainty":0.56},
+      {"id":"VID-103","modality":"Video","time":"3.0s","claim":"Later frame repeats the same visual fact.","stance":"support","utility":0.11,"support":0.98,"uncertainty":0.12,"withoutSupport":0.97,"withoutUncertainty":0.18}]},
+    {"id":"contradiction","title":"Late contradiction","hypothesis":"The synthetic red marker was removed from the tray.","recommendation":{"title":"Tray-weight sensor","copy":"An independent physical reading could resolve the video–inventory conflict."},"evidence":[
+      {"id":"VID-301","modality":"Video","time":"1.0s","claim":"A hand-shaped marker occludes the red marker.","stance":"support","utility":1.12,"support":0.70,"uncertainty":0.88,"withoutSupport":0.17,"withoutUncertainty":0.66},
+      {"id":"VID-302","modality":"Video","time":"2.1s","claim":"Tray appears empty after occlusion.","stance":"support","utility":0.46,"support":0.84,"uncertainty":0.63,"withoutSupport":0.12,"withoutUncertainty":0.52},
+      {"id":"INV-401","modality":"Inventory","time":"4.6s","claim":"Cell A3 still reports the red marker.","stance":"contradict","utility":2.96,"support":0.34,"uncertainty":0.92,"withoutSupport":0.84,"withoutUncertainty":0.63}]},
+    {"id":"missing","title":"Missing modality","hypothesis":"The synthetic container was opened.","recommendation":{"title":"Lid-contact sensor","copy":"A direct low-cost state event is expected to reduce the unresolved visual ambiguity."},"evidence":[
+      {"id":"VID-601","modality":"Video","time":"1.0s","claim":"The lid edge is partly hidden.","stance":"unresolved","utility":1.07,"support":0.50,"uncertainty":1.00,"withoutSupport":0.50,"withoutUncertainty":1.00},
+      {"id":"VID-602","modality":"Video","time":"2.5s","claim":"A second view remains inconclusive.","stance":"unresolved","utility":0.14,"support":0.50,"uncertainty":1.00,"withoutSupport":0.50,"withoutUncertainty":1.00},
+      {"id":"AUD-701","modality":"Audio transcript","time":"2.7s","claim":"An ambiguous synthetic click is present.","stance":"neutral","utility":1.00,"support":0.50,"uncertainty":1.00,"withoutSupport":0.50,"withoutUncertainty":1.00}]}
+  ]
+}

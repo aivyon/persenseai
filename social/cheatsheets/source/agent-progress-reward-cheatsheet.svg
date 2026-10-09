@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">01 / 01</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · CHEAT SHEET</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">Agent Progress Reward</tspan></text>
+<line x1="72" y1="290.0" x2="1008" y2="290.0" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="440" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="750" text-anchor="start" letter-spacing="0">Agent action → Tool result → State change</text>
+<text x="72" y="490" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="750" text-anchor="start" letter-spacing="0">→ Progress reward → Next action or stop</text>
+<rect x="72" y="545" width="470" height="450" rx="22" fill="#0d192b" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="3"/>
+<text x="104" y="600" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="start" letter-spacing="0">POSITIVE REWARD</text>
+<text x="108" y="654" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  uncertainty reduction</text>
+<text x="108" y="693" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  information gain</text>
+<text x="108" y="732" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  grounded claims</text>
+<text x="108" y="771" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  provenance completeness</text>
+<text x="108" y="810" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  contradiction resolution</text>
+<text x="108" y="849" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  cross-modal corroboration</text>
+<text x="108" y="888" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  answer coverage</text>
+<text x="108" y="927" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  useful graph connectivity</text>
+<text x="108" y="966" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">+  cited grounded answer</text>
+<rect x="566" y="545" width="442" height="450" rx="22" fill="#0d192b" fill-opacity="1.0" stroke="#ff7188" stroke-width="3"/>
+<text x="598" y="600" fill="#ff7188" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="start" letter-spacing="0">PENALTIES</text>
+<text x="602" y="654" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  redundant evidence</text>
+<text x="602" y="693" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  repeated actions</text>
+<text x="602" y="732" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  unsupported claims</text>
+<text x="602" y="771" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  cost</text>
+<text x="602" y="810" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  latency</text>
+<text x="602" y="849" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  wasted budget</text>
+<text x="602" y="888" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  unresolved contradiction</text>
+<text x="602" y="927" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  premature stopping</text>
+<text x="602" y="966" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" text-anchor="start" letter-spacing="0">−  failed tool calls</text>
+<text x="72" y="1038" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="850" text-anchor="start" letter-spacing="0">DECIDE</text>
+<rect x="80" y="1060" width="200" height="54" rx="27" fill="#14243a" fill-opacity="1.0" stroke="#53e0d0" stroke-width="2"/>
+<text x="180.0" y="1098" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">CONTINUE</text>
+<rect x="296" y="1060" width="330" height="54" rx="27" fill="#14243a" fill-opacity="1.0" stroke="#f4c768" stroke-width="2"/>
+<text x="461.0" y="1098" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="0">REQUEST EVIDENCE</text>
+<rect x="642" y="1060" width="358" height="54" rx="27" fill="#14243a" fill-opacity="1.0" stroke="#ff7188" stroke-width="2"/>
+<text x="821.0" y="1098" fill="#ff7188" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="0">TEST CONTRADICTION</text>
+<rect x="210" y="1128" width="260" height="54" rx="27" fill="#14243a" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="2"/>
+<text x="340.0" y="1166" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">ANSWER</text>
+<rect x="494" y="1128" width="440" height="54" rx="27" fill="#14243a" fill-opacity="1.0" stroke="#8492ff" stroke-width="2"/>
+<text x="714.0" y="1166" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle" letter-spacing="0">STOP INCONCLUSIVE</text>
+<text x="72" y="1214" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="650" text-anchor="start"><tspan x="72" dy="0">Reward measures grounded resolution, not whether the agent</tspan><tspan x="72" dy="41.5">confirms the original hypothesis.</tspan></text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1294" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="72" dy="0">Deterministic bounded agent · no LLM planning</tspan><tspan x="72" dy="34.0">Synthetic evidence</tspan></text>
+</svg>

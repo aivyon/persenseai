@@ -1,0 +1,54 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="520"><stop stop-color="#050914"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="line" x1="150" y1="0" x2="1250" y2="0"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1400" height="520" rx="34" fill="url(#bg)"/>
+  <path d="M160 260H1240" stroke="url(#line)" stroke-width="4" stroke-linecap="round" opacity=".85" filter="url(#glow)"/>
+
+  <g font-family="Inter,Arial">
+    <g transform="translate(70 130)">
+      <rect width="210" height="260" rx="24" fill="#0b1220" stroke="#38bdf8" stroke-opacity=".35"/>
+      <text x="32" y="54" fill="#67e8f9" font-size="18" letter-spacing=".12em">INPUT</text>
+      <text x="32" y="95" fill="#f8fafc" font-size="25" font-weight="700">Video + Logs</text>
+      <rect x="32" y="128" width="146" height="28" rx="8" fill="#111827"/><text x="48" y="148" fill="#cbd5e1" font-size="15">clip.mp4</text>
+      <rect x="32" y="166" width="146" height="28" rx="8" fill="#111827"/><text x="48" y="186" fill="#cbd5e1" font-size="15">tracks.csv</text>
+      <rect x="32" y="204" width="146" height="28" rx="8" fill="#111827"/><text x="48" y="224" fill="#cbd5e1" font-size="15">detections.json</text>
+    </g>
+    <g transform="translate(330 130)">
+      <rect width="210" height="260" rx="24" fill="#0b1220" stroke="#38bdf8" stroke-opacity=".35"/>
+      <text x="32" y="54" fill="#67e8f9" font-size="18" letter-spacing=".12em">EXTRACT</text>
+      <text x="32" y="95" fill="#f8fafc" font-size="25" font-weight="700">Feature Table</text>
+      <text x="32" y="138" fill="#94a3b8" font-size="16">bbox_jump</text><text x="154" y="138" fill="#e2e8f0" font-size="16">0.82</text>
+      <text x="32" y="174" fill="#94a3b8" font-size="16">embed_dist</text><text x="154" y="174" fill="#e2e8f0" font-size="16">0.91</text>
+      <text x="32" y="210" fill="#94a3b8" font-size="16">frame_gap</text><text x="154" y="210" fill="#e2e8f0" font-size="16">6</text>
+    </g>
+    <g transform="translate(590 130)">
+      <rect width="210" height="260" rx="24" fill="#0b1220" stroke="#8b5cf6" stroke-opacity=".38"/>
+      <text x="32" y="54" fill="#c4b5fd" font-size="18" letter-spacing=".12em">DETECT</text>
+      <text x="32" y="95" fill="#f8fafc" font-size="25" font-weight="700">Anomaly</text>
+      <circle cx="105" cy="172" r="58" stroke="#8b5cf6" stroke-width="3" opacity=".35"/>
+      <circle cx="105" cy="172" r="38" stroke="#22d3ee" stroke-width="3" opacity=".55"/>
+      <path d="M105 172L146 137" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+      <text x="73" y="248" fill="#fbbf24" font-size="18">score 0.93</text>
+    </g>
+    <g transform="translate(850 130)">
+      <rect width="210" height="260" rx="24" fill="#0b1220" stroke="#8b5cf6" stroke-opacity=".38"/>
+      <text x="32" y="54" fill="#c4b5fd" font-size="18" letter-spacing=".12em">REASON</text>
+      <text x="32" y="95" fill="#f8fafc" font-size="25" font-weight="700">Agent</text>
+      <path d="M58 166C82 118 137 118 161 166C137 214 82 214 58 166Z" stroke="#22d3ee" stroke-width="4"/>
+      <circle cx="110" cy="166" r="18" fill="#22d3ee"/>
+      <text x="52" y="238" fill="#cbd5e1" font-size="18">ID switch likely</text>
+    </g>
+    <g transform="translate(1110 130)">
+      <rect width="210" height="260" rx="24" fill="#0b1220" stroke="#f59e0b" stroke-opacity=".4"/>
+      <text x="32" y="54" fill="#fbbf24" font-size="18" letter-spacing=".12em">OUTPUT</text>
+      <text x="32" y="95" fill="#f8fafc" font-size="25" font-weight="700">Report</text>
+      <rect x="32" y="126" width="146" height="22" rx="6" fill="#172033"/>
+      <rect x="32" y="162" width="126" height="22" rx="6" fill="#172033"/>
+      <rect x="32" y="198" width="156" height="22" rx="6" fill="#172033"/>
+      <text x="32" y="250" fill="#cbd5e1" font-size="18">evidence + check</text>
+    </g>
+  </g>
+</svg>

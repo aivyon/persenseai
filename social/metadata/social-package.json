@@ -1,0 +1,30 @@
+{
+  "package": "PersenseAI social launch package",
+  "version": "1.0.0",
+  "published_site": "https://persenseai.com",
+  "preview": "https://persenseai.com/social/preview.html",
+  "coverage": [
+    "Full PersenseAI multimodal reasoning pipeline",
+    "Evidence Orchestration Agent",
+    "Agent Progress Reward"
+  ],
+  "formats": {
+    "canvas": {
+      "width": 1080,
+      "height": 1350,
+      "ratio": "4:5",
+      "color_mode": "RGB"
+    },
+    "pipeline_carousel_slides": 8,
+    "agent_reward_carousel_slides": 9,
+    "cheatsheets": 2,
+    "captions": 5,
+    "video_prompts": 2,
+    "video_duration_seconds": 40,
+    "voiceover_words": 86
+  },
+  "policy_disclosure": "The current agent uses a deterministic utility-driven policy; no language model is used for planning.",
+  "scenario_disclosure": "All scenarios and evidence are synthetic.",
+  "evaluation_disclosure": "Progress reward is an explanatory evaluation heuristic, not truth or legal weight.",
+  "validity_disclosure": "No forensic, operational, surveillance, production, or legal validity is claimed."
+}

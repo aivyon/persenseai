@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">03 / 08</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · SYNTHETIC RESEARCH</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">2. Visual Reward Timeline</tspan></text>
+<line x1="72" y1="290.0" x2="1008" y2="290.0" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="334.0" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0">RESEARCH QUESTION</text>
+<text x="72" y="390.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="750" text-anchor="start" letter-spacing="0">What changed over time?</text>
+<text x="72" y="462.0" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="500" text-anchor="start"><tspan x="72" dy="0">Dense progress and failure signals keep temporal</tspan><tspan x="72" dy="46.4">behavior visible instead of reducing a sequence</tspan><tspan x="72" dy="46.4">to one final score.</tspan></text>
+<rect x="72" y="720" width="168" height="160" rx="14" fill="#16344a" fill-opacity="1.0" stroke="#29405f" stroke-width="2"/>
+<text x="156" y="816" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">t1</text>
+<rect x="260" y="720" width="168" height="160" rx="14" fill="#1a314a" fill-opacity="1.0" stroke="#29405f" stroke-width="2"/>
+<text x="344" y="816" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">t2</text>
+<rect x="448" y="720" width="168" height="160" rx="14" fill="#233049" fill-opacity="1.0" stroke="#29405f" stroke-width="2"/>
+<text x="532" y="816" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">t3</text>
+<rect x="636" y="720" width="168" height="160" rx="14" fill="#37293a" fill-opacity="1.0" stroke="#29405f" stroke-width="2"/>
+<text x="720" y="816" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">t4</text>
+<rect x="824" y="720" width="168" height="160" rx="14" fill="#183a3a" fill-opacity="1.0" stroke="#29405f" stroke-width="2"/>
+<text x="908" y="816" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle" letter-spacing="0">t5</text>
+<line x1="72" y1="1000" x2="1008" y2="1000" stroke="#29405f" stroke-width="3" stroke-linecap="round"/>
+<path d="M72 1090 C180 1070 240 990 340 1018 S500 1110 610 950 S790 850 1008 900" fill="none" stroke="#53e0d0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="1.0"/>
+<line x1="610" y1="920" x2="610" y2="1130" stroke="#ff7188" stroke-width="4" stroke-linecap="round" stroke-dasharray="14 12"/>
+<text x="630" y="1150" fill="#ff7188" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" letter-spacing="0">failure marker</text>
+<text x="72" y="960" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0">PROGRESS REWARD</text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1315" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start" letter-spacing="0">Synthetic · inspectable</text>
+<text x="1008" y="1315" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">PIPELINE  ·  3/8</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs>
+<linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15274a"/><stop offset=".52" stop-color="#07101d"/><stop offset="1" stop-color="#091522"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#53e0d0"/><stop offset="1" stop-color="#8492ff"/></linearGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#263954" stroke-opacity=".28"/></pattern>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1350" fill="url(#bgGlow)"/><rect width="1080" height="1350" fill="url(#grid)"/>
+<circle cx="940" cy="90" r="210" fill="#8492ff" opacity=".06"/><circle cx="90" cy="1170" r="250" fill="#53e0d0" opacity=".04"/>
+<circle cx="94" cy="84" r="22" fill="url(#accent)" fill-opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="94" y="96" fill="#07101d" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="0">P</text>
+<text x="132" y="94" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="800" text-anchor="start" letter-spacing="0">PersenseAI</text>
+<text x="1008" y="94" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="end" letter-spacing="0">09 / 09</text>
+<text x="72" y="170" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="2">PERSENSEAI · AGENT PROGRESS REWARD</text>
+<text x="72" y="248" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" text-anchor="start"><tspan x="72" dy="0">Continue, answer, or stop</tspan><tspan x="72" dy="75.6">inconclusive</tspan></text>
+<line x1="72" y1="365.6" x2="1008" y2="365.6" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="409.6" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0">BOUNDED NEXT DECISION</text>
+<circle cx="540" cy="800" r="112" fill="#12213a" fill-opacity="1.0" stroke="#8492ff" stroke-width="5"/>
+<text x="540" y="780" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="middle"><tspan x="540" dy="0">CURRENT</tspan><tspan x="540" dy="39.6">STATE</tspan></text>
+<line x1="540" y1="800" x2="190" y2="650" stroke="#53e0d0" stroke-width="4" stroke-linecap="round"/>
+<circle cx="190" cy="650" r="68" fill="#0d192b" fill-opacity="1.0" stroke="#53e0d0" stroke-width="4"/>
+<text x="190" y="662" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="0">INSPECT</text>
+<line x1="540" y1="800" x2="190" y2="950" stroke="#ff7188" stroke-width="4" stroke-linecap="round"/>
+<circle cx="190" cy="950" r="68" fill="#0d192b" fill-opacity="1.0" stroke="#ff7188" stroke-width="4"/>
+<text x="190" y="962" fill="#ff7188" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="0">VERIFY</text>
+<line x1="540" y1="800" x2="540" y2="1080" stroke="#8492ff" stroke-width="4" stroke-linecap="round"/>
+<circle cx="540" cy="1080" r="68" fill="#0d192b" fill-opacity="1.0" stroke="#8492ff" stroke-width="4"/>
+<text x="540" y="1092" fill="#8492ff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="0">COMPARE</text>
+<line x1="540" y1="800" x2="890" y2="950" stroke="#f4c768" stroke-width="4" stroke-linecap="round"/>
+<circle cx="890" cy="950" r="68" fill="#0d192b" fill-opacity="1.0" stroke="#f4c768" stroke-width="4"/>
+<text x="890" y="962" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="0">REQUEST</text>
+<line x1="540" y1="800" x2="890" y2="650" stroke="#4ad5a5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="890" cy="650" r="68" fill="#0d192b" fill-opacity="1.0" stroke="#4ad5a5" stroke-width="4"/>
+<text x="890" y="662" fill="#4ad5a5" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" text-anchor="middle" letter-spacing="0">ANSWER</text>
+<rect x="250" y="1105" width="580" height="68" rx="34" fill="#262218" fill-opacity="1.0" stroke="#f4c768" stroke-width="3"/>
+<text x="540" y="1151" fill="#f4c768" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="850" text-anchor="middle" letter-spacing="0">STOP INCONCLUSIVE</text>
+<text x="540" y="1218" fill="#53e0d0" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="750" text-anchor="middle" letter-spacing="0">Explore the bounded agent demo at persenseai.com</text>
+<text x="72" y="535" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="650" text-anchor="start"><tspan x="72" dy="0">Grounded resolution — not support</tspan><tspan x="72" dy="37.8">for a preferred conclusion.</tspan></text>
+<line x1="72" y1="1266" x2="1008" y2="1266" stroke="#29405f" stroke-width="2" stroke-linecap="round"/>
+<text x="72" y="1294" fill="#9fb1cc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" text-anchor="start"><tspan x="72" dy="0">Deterministic utility-driven policy.</tspan><tspan x="72" dy="34.0">No language model is used for planning.</tspan></text>
+</svg>
