@@ -25,3 +25,4 @@ Then open `http://127.0.0.1:8000` and test the homepage, project pages, and mini
 ## Social package
 
 The publication assets, captions, video-production prompts, and direct review page are indexed in [`social/README.md`](social/README.md).
+
